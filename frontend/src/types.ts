@@ -1,5 +1,5 @@
 export type Cabin = 'economy' | 'premium' | 'business' | 'first'
-export type Method = 'cash' | 'award' | 'joined'
+export type Method = 'cash' | 'award' | 'joined' | 'return' | 'hidden'
 
 export interface Leg {
   availability_id: string
@@ -131,6 +131,40 @@ export interface Way {
   cashRef: number | null
   award?: AwardOption
   cash?: CashItinerary
+  trick?: Trick
+  reach?: Reach | null
+}
+
+export interface Trick {
+  kind: 'return' | 'hidden'
+  cabin: Cabin
+  price: number
+  currency: string
+  normal_price: number
+  saving: number
+  same_flights: boolean
+  itinerary: CashItinerary
+  ticketed_to: string | null
+  dropped: CashSegment[]
+  return_date: string | null
+}
+
+export interface TrickResult {
+  cabin: Cabin
+  tricks: Trick[]
+  beyond: string[]
+  api_calls: number
+  errors: string[]
+}
+
+export interface TransferCurrency { id: string; name: string; note: string; partners: Record<string, number> }
+export interface TransferData { currencies: TransferCurrency[]; programs: { id: string; name: string; alliance: string | null }[] }
+export interface Wallet { programs: Record<string, number>; currencies: Record<string, number> }
+
+/** How the wallet covers an award. */
+export interface Reach {
+  status: 'have' | 'transfer' | 'short'
+  text: string
 }
 
 export type Places = Record<string, { city: string; name: string }>

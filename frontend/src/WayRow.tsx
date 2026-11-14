@@ -22,7 +22,10 @@ const METHOD = {
   cash: { label: 'Cash fare', cls: 'bg-brand-soft text-brand' },
   award: { label: 'Award', cls: 'bg-award-soft text-award' },
   joined: { label: 'Joined award', cls: 'bg-award-soft text-award' },
+  return: { label: 'Return ticket', cls: 'bg-good-soft text-good' },
+  hidden: { label: 'Hidden city', cls: 'bg-good-soft text-good' },
 }
+const REACH = { have: 'text-good', transfer: 'text-good', short: 'text-sub' }
 
 interface LegDetail { segments: Segment[]; links: { label: string; link: string; primary: boolean }[] }
 
@@ -102,6 +105,7 @@ function AwardDetail({ w, places }: { w: Way; places: Places }) {
             <p key={i} className="text-xs text-sub tabular-nums">{l.origin}–{l.destination}: {l.miles.toLocaleString('en-US')} mi + {money(l.taxes, l.taxes_currency ?? 'USD')}</p>
           ))}
           {w.cpp !== null && <p className="mt-1 text-good">Worth {w.cpp.toFixed(1)}¢ per mile against the {usd(w.cashRef!)} cash fare</p>}
+          {w.reach && <p className={`mt-1 ${REACH[w.reach.status]}`}>{w.reach.text}</p>}
           <p className={`mt-1 text-xs ${TONE[ag.tone]}`}>Seats {ag.label}{a.seats ? ` · ${a.seats} left` : ''}</p>
         </div>
         {a.note && <p className="rounded-lg bg-award-soft p-3 text-xs text-award">{a.note}</p>}
@@ -147,7 +151,7 @@ export function WayRow({ w, places, open, onToggle, lowest }: { w: Way; places: 
           <span className={`inline-block rounded px-1.5 py-0.5 text-xs font-medium ${m.cls}`}>{m.label}</span>
           <span className="text-xs text-sub md:hidden">{w.stops === 0 ? 'Nonstop' : `${w.stops} stop${w.stops > 1 ? 's' : ''} · ${w.via.join(', ')}`}</span>
           <div className="truncate text-xs text-sub md:mt-0.5">
-            {a ? a.program_name : CABIN_LABEL[w.cabin]}
+            {a ? a.program_name : w.trick ? `saves ${usd(w.trick.saving)}` : CABIN_LABEL[w.cabin]}
             {ag && <span className={`ml-1.5 ${TONE[ag.tone]}`}>· {ag.label.replace('checked ', '')}</span>}
           </div>
         </div>
@@ -157,11 +161,12 @@ export function WayRow({ w, places, open, onToggle, lowest }: { w: Way; places: 
               <div className="text-base font-medium tabular-nums text-award">{a.miles.toLocaleString('en-US')} <span className="text-xs font-normal">mi</span></div>
               <div className="text-xs text-sub tabular-nums">+ {a.taxes_currency && a.taxes_currency !== 'mixed' ? money(a.taxes, a.taxes_currency) : `≈ ${usd(a.taxes_usd)}`}</div>
               {w.cpp !== null && <div className="text-xs font-medium text-good tabular-nums">{w.cpp.toFixed(1)}¢/mi</div>}
+              {w.reach && w.reach.status !== 'short' && <div className="text-xs text-good">✓ your points</div>}
             </>
           ) : (
             <>
-              <div className={`text-base font-medium tabular-nums ${lowest ? 'text-good' : ''}`}>{usd(w.estUsd)}</div>
-              <div className="text-xs text-sub">{CABIN_LABEL[w.cabin]}</div>
+              <div className={`text-base font-medium tabular-nums ${lowest || w.trick ? 'text-good' : ''}`}>{usd(w.estUsd)}</div>
+              <div className="text-xs text-sub">{w.trick ? <s>{usd(w.trick.normal_price)}</s> : CABIN_LABEL[w.cabin]}</div>
             </>
           )}
         </div>
@@ -178,11 +183,33 @@ export function WayRow({ w, places, open, onToggle, lowest }: { w: Way; places: 
               <Timeline places={places} segs={w.cash!.segments.map((s) => ({ ...s, note: s.travel_class }))} />
               <div className="space-y-3 text-sm">
                 <div className="rounded-lg border border-line p-3">
-                  <p className="font-medium">Cash fare</p>
-                  <p className="tabular-nums">{usd(w.estUsd)} one way</p>
+                  <p className="font-medium">{w.trick ? (w.trick.kind === 'hidden' ? `Ticket to ${places[w.trick.ticketed_to!]?.city ?? w.trick.ticketed_to} (${w.trick.ticketed_to})` : `Return ticket, back on ${dayLabel(w.trick.return_date!)}`) : 'Cash fare'}</p>
+                  <p className="tabular-nums">{usd(w.estUsd)}{w.trick ? ' total' : ' one way'}</p>
+                  {w.trick && <p className="text-good">Saves {usd(w.trick.saving)} against the {w.trick.same_flights ? 'one-way fare on these flights' : 'lowest one-way fare'} ({usd(w.trick.normal_price)})</p>}
                 </div>
+                {w.trick?.kind === 'hidden' && (
+                  <div className="rounded-lg bg-warn/10 p-3 text-xs">
+                    <p className="mb-1 font-medium text-warn">You leave at {w.cash!.segments.at(-1)!.destination} and do not take {w.trick.dropped.map((s) => s.flight_number).join(', ')}</p>
+                    <ul className="list-disc space-y-0.5 pl-4 text-sub">
+                      <li>Cabin bags only. A checked bag goes to {w.trick.ticketed_to}.</li>
+                      <li>Book this as a one-way ticket. The airline cancels all later flights on the ticket.</li>
+                      <li>This breaks the airline's ticket rules. The airline can close your loyalty account or ask for the fare difference.</li>
+                      <li>If the airline changes the route, the stop at your city can go away.</li>
+                    </ul>
+                  </div>
+                )}
+                {w.trick?.kind === 'return' && (
+                  <div className="rounded-lg bg-warn/10 p-3 text-xs">
+                    <p className="mb-1 font-medium text-warn">You fly the outbound flights only</p>
+                    <ul className="list-disc space-y-0.5 pl-4 text-sub">
+                      <li>Fly the first direction, then do not take the return.</li>
+                      <li>This breaks the ticket rules of most airlines. The risk is low for one ticket and increases if you repeat it with one airline.</li>
+                      <li>Other return dates can cost less. This search checked 7 and 14 days after departure.</li>
+                    </ul>
+                  </div>
+                )}
                 <a className="inline-block rounded-full bg-brand px-4 py-1.5 font-medium text-page" target="_blank" rel="noreferrer"
-                  href={`https://www.google.com/travel/flights?q=${encodeURIComponent(`one way flight ${w.cash!.segments[0].origin} to ${w.cash!.segments.at(-1)!.destination} on ${w.departs_at.slice(0, 10)} ${CABIN_LABEL[w.cabin]}`)}`}>
+                  href={`https://www.google.com/travel/flights?q=${encodeURIComponent(w.trick?.kind === 'return' ? `round trip flight ${w.cash!.segments[0].origin} to ${w.cash!.segments.at(-1)!.destination} on ${w.departs_at.slice(0, 10)} return ${w.trick.return_date} ${CABIN_LABEL[w.cabin]}` : `one way flight ${w.cash!.segments[0].origin} to ${w.trick?.ticketed_to ?? w.cash!.segments.at(-1)!.destination} on ${w.departs_at.slice(0, 10)} ${CABIN_LABEL[w.cabin]}`)}`}>
                   Open in Google Flights
                 </a>
               </div>

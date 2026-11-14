@@ -147,9 +147,7 @@ def _option(kind: str, src: str, cabin: str, legs: list[Leg], now: datetime, not
     total = _utc(last.arrives_at, last.destination) - _utc(first.departs_at, first.origin)
     currencies = {leg.taxes_currency for leg in legs if leg.taxes}
     seat_counts = [leg.seats for leg in legs if leg.seats]
-    carriers: list[str] = []
-    for leg in legs:
-        carriers += [c for c in leg.carriers if c not in carriers]
+    carriers = list(dict.fromkeys(c for leg in legs for c in leg.carriers))
     return AwardOption(
         id=f"{src}:{cabin}:" + "+".join(leg.availability_id + "/" + "-".join(leg.flight_numbers) for leg in legs),
         kind=kind,  # type: ignore[arg-type]
@@ -252,7 +250,13 @@ def build_options(
         key = (opt.program, opt.cabin, tuple(f for leg in opt.legs for f in leg.flight_numbers), opt.departs_at)
         if key not in best or (opt.miles, opt.taxes) < (best[key].miles, best[key].taxes):
             best[key] = opt
-    return sorted(best.values(), key=lambda o: (o.departs_at[:10], -CABIN_ORDER[o.cabin], o.miles))
+    # Trips that look the same on the page (same times and stops) are one row: keep the cheapest.
+    shown: dict[tuple, AwardOption] = {}
+    for opt in best.values():
+        key = (opt.program, opt.cabin, opt.departs_at, opt.arrives_at, tuple(opt.via))
+        if key not in shown or (opt.miles, opt.taxes_usd) < (shown[key].miles, shown[key].taxes_usd):
+            shown[key] = opt
+    return sorted(shown.values(), key=lambda o: (o.departs_at[:10], -CABIN_ORDER[o.cabin], o.miles))
 
 
 async def search_awards(

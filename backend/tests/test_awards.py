@@ -122,3 +122,13 @@ def test_cache_round_trip_and_expiry():
     assert c.get("k") == {"a": 1}
     c.set("old", [1], -1)
     assert c.get("old") is None
+
+
+def test_same_times_and_stops_show_as_one_row_and_carriers_are_not_repeated():
+    def pair(n, miles):
+        out = row("delta", {**trip("delta", "business", "DXB", "CDG", "2026-11-20T01:30", "2026-11-20T06:00", f"AF{n}", miles, aid=f"o{n}"), "Carriers": "AF, AF"})
+        inn = row("delta", trip("delta", "business", "CDG", "GVA", "2026-11-20T08:00", "2026-11-20T09:10", f"AF{n + 1}", 10000, aid=f"i{n}"))
+        return out, inn
+    (o1, i1), (o2, i2) = pair(100, 60000), pair(200, 50000)
+    opts = build_options([], [o1, o2], [i1, i2], "DXB", "GVA", NOW)
+    assert [(o.miles, o.carriers) for o in opts] == [(60000, ["AF"])]

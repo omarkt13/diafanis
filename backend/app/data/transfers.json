@@ -1,0 +1,24 @@
+{
+  "_note": "Transfer partners of bank and hotel points. Edit this file for your own cards. 'ratio' is points needed for 1 mile. Partner lists change and differ by country: check each one before you transfer.",
+  "currencies": [
+    {
+      "id": "marriott",
+      "name": "Marriott Bonvoy",
+      "note": "3 points for 1 mile at most airlines.",
+      "partners": {
+        "aeroplan": 3, "american": 3, "alaska": 3, "delta": 3, "emirates": 3, "etihad": 3, "flyingblue": 3,
+        "qantas": 3, "qatar": 3, "saudia": 3, "singapore": 3, "turkish": 3, "united": 2.73, "virginatlantic": 3,
+        "velocity": 3, "cathay": 3, "aeromexico": 3
+      }
+    },
+    {
+      "id": "amex_mr",
+      "name": "Amex Membership Rewards",
+      "note": "United States partner list. The Saudi and other country lists are different: edit to match your card.",
+      "partners": {
+        "aeroplan": 1, "flyingblue": 1, "delta": 1, "virginatlantic": 1, "emirates": 1, "etihad": 1,
+        "qantas": 1, "singapore": 1, "qatar": 1, "cathay": 1, "aeromexico": 0.625
+      }
+    }
+  ]
+}

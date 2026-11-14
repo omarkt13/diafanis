@@ -9,10 +9,11 @@ export interface FilterState {
   maxHours: number // 0: any
   maxAgeDays: number // 0: any
   centsPerMile: number
+  onlyMine: boolean
 }
 
 export const DEFAULT_FILTERS: FilterState = {
-  maxStops: 9, methods: ['cash', 'award', 'joined'], programs: [], airlines: [], maxHours: 0, maxAgeDays: 0, centsPerMile: 1.2,
+  maxStops: 9, methods: ['cash', 'award', 'joined', 'return', 'hidden'], programs: [], airlines: [], maxHours: 0, maxAgeDays: 0, centsPerMile: 1.2, onlyMine: false,
 }
 
 function Chip({ label, active, children, onClear }: { label: string; active: boolean; children: ReactNode; onClear?: () => void }) {
@@ -58,23 +59,29 @@ interface Props {
   hasCash: boolean
 }
 
-const METHOD_LABEL: Record<Method, string> = { cash: 'Cash fares', award: 'Awards (one booking)', joined: 'Joined award legs' }
+const METHOD_LABEL: Record<Method, string> = {
+  cash: 'Cash fares', award: 'Awards (one booking)', joined: 'Joined award legs', return: 'Return-ticket fares', hidden: 'Hidden-city fares',
+}
+const METHODS = Object.keys(METHOD_LABEL) as Method[]
 
 export function Filters({ f, set, programs, airlines, hasCash }: Props) {
   const stopsLabel = f.maxStops === 0 ? 'Nonstop only' : f.maxStops === 1 ? '1 stop or fewer' : f.maxStops === 2 ? '2 stops or fewer' : 'Stops'
-  const methodsActive = f.methods.length < 3
+  const methodsActive = f.methods.length < METHODS.length || f.onlyMine
   return (
     <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0">
-      <Chip label={methodsActive ? f.methods.map((m) => METHOD_LABEL[m].split(' ')[0]).join(', ') || 'No type' : 'Pay with'} active={methodsActive}
-        onClear={() => set({ ...f, methods: DEFAULT_FILTERS.methods })}>
+      <Chip label={methodsActive ? (f.methods.length < METHODS.length ? `${f.methods.length} of ${METHODS.length} types` : 'My points') : 'Pay with'} active={methodsActive}
+        onClear={() => set({ ...f, methods: DEFAULT_FILTERS.methods, onlyMine: false })}>
         <p className="mb-2 font-medium">Pay with</p>
-        {(['cash', 'award', 'joined'] as Method[]).map((m) => (
+        {METHODS.map((m) => (
           <Row key={m}>
             <input type="checkbox" checked={f.methods.includes(m)} onChange={() => set({ ...f, methods: toggle(f.methods, m) })} />
             {METHOD_LABEL[m]}
-            {m === 'cash' && !hasCash && <span className="text-xs text-sub">(no data)</span>}
+            {m !== 'award' && m !== 'joined' && !hasCash && <span className="text-xs text-sub">(no data)</span>}
           </Row>
         ))}
+        <div className="mt-2 border-t border-line pt-2">
+          <Row><input type="checkbox" checked={f.onlyMine} onChange={() => set({ ...f, onlyMine: !f.onlyMine })} />Awards: only with my points</Row>
+        </div>
       </Chip>
 
       <Chip label={stopsLabel} active={f.maxStops < 9} onClear={() => set({ ...f, maxStops: 9 })}>

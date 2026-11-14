@@ -1,6 +1,6 @@
 import { airlineName, carrierOf } from './airlines'
 import { CABIN_LABEL, dayLabel, miles, usd } from './format'
-import type { AwardOption, AwardSearchResult, Cabin, CashAll, Way } from './types'
+import type { AwardOption, AwardSearchResult, Cabin, CashAll, Reach, TransferData, TrickResult, Wallet, Way } from './types'
 
 const CABINS: Cabin[] = ['economy', 'premium', 'business', 'first']
 const norm = (f: string) => f.replace(/\s+/g, '').toUpperCase()
@@ -34,7 +34,26 @@ function awardWay(o: AwardOption, centsPerMile: number): Way {
   }
 }
 
-export function buildWays(awards: AwardSearchResult | null, cash: CashAll | null, cashDate: string, centsPerMile: number): Way[] {
+export function reachOf(o: AwardOption, wallet: Wallet, transfers: TransferData | null): Reach | null {
+  const have = wallet.programs[o.program] ?? 0
+  if (have >= o.miles) return { status: 'have', text: `In your wallet: ${miles(have)} ${o.program_name} miles` }
+  const gap = o.miles - have
+  let short: Reach | null = have > 0 ? { status: 'short', text: `You have ${miles(have)} of ${miles(o.miles)} miles` } : null
+  for (const c of transfers?.currencies ?? []) {
+    const ratio = c.partners[o.program]
+    const bal = wallet.currencies[c.id] ?? 0
+    if (!ratio || bal <= 0) continue
+    const need = Math.ceil(gap * ratio)
+    if (bal >= need) return { status: 'transfer', text: `Move ${miles(need)} ${c.name} points (${ratio}:1)` }
+    short ??= { status: 'short', text: `${c.name}: you have ${miles(bal)} of ${miles(need)} points` }
+  }
+  return short
+}
+
+export function buildWays(
+  awards: AwardSearchResult | null, cash: CashAll | null, cashDate: string, centsPerMile: number,
+  tricks: TrickResult[] = [], wallet: Wallet | null = null, transfers: TransferData | null = null,
+): Way[] {
   const ways: Way[] = []
   const cashByFlights = new Map<string, number>()
   const cashLowest: Partial<Record<Cabin, number>> = {}
@@ -79,7 +98,35 @@ export function buildWays(awards: AwardSearchResult | null, cash: CashAll | null
         w.cpp = ((ref - o.taxes_usd) / o.miles) * 100
       }
     }
+    if (wallet) w.reach = reachOf(o, wallet, transfers)
     ways.push(w)
+  }
+
+  for (const res of tricks) {
+    res.tricks.forEach((t, i) => {
+      const it = t.itinerary
+      const flights = it.segments.map((s) => norm(s.flight_number))
+      ways.push({
+        id: `${t.kind}:${t.cabin}:${flights.join('+')}:${i}`,
+        method: t.kind,
+        cabin: t.cabin,
+        departs_at: it.departs_at,
+        arrives_at: it.arrives_at,
+        duration_minutes: it.duration_minutes,
+        stops: it.stops,
+        via: it.via,
+        carriers: [...new Set(it.segments.map((s) => carrierOf(s.flight_number)))],
+        flights,
+        ground: false,
+        estUsd: t.price,
+        // A trick has a cost in risk and effort: rank it a little lower than a plain fare of the same price.
+        score: score(t.price, it.duration_minutes, it.stops, 0) + (t.kind === 'hidden' ? 60 : 25),
+        cpp: null,
+        cashRef: t.normal_price,
+        cash: it,
+        trick: t,
+      })
+    })
   }
   return ways
 }
@@ -139,7 +186,7 @@ export function buildFinds(ways: Way[], day: string, cabin: Cabin | 'any', cash:
   }
 
   // A higher cabin on miles for less than the cash fare of a lower cabin.
-  const lowerCash = min(onDay.filter((w) => w.cash && CABINS.indexOf(w.cabin) < CABINS.indexOf(focus)), (w) => w.estUsd)
+  const lowerCash = min(onDay.filter((w) => w.cash && !w.trick && CABINS.indexOf(w.cabin) < CABINS.indexOf(focus)), (w) => w.estUsd)
   if (cheapestAward && lowerCash && cheapestAward.estUsd < lowerCash.estUsd) {
     finds.push({
       key: 'upgrade', tone: 'good', title: `${label} for less than ${CABIN_LABEL[lowerCash.cabin].toLowerCase()}`,
@@ -149,7 +196,29 @@ export function buildFinds(ways: Way[], day: string, cabin: Cabin | 'any', cash:
     })
   }
 
-  const cashCheap = min(inCabin(onDay, focus).filter((w) => w.cash), (w) => w.estUsd)
+  const trick = min(inCabin(onDay, focus).filter((w) => w.trick), (w) => w.estUsd)
+  if (trick?.trick) {
+    const t = trick.trick
+    finds.unshift({
+      key: 'trick', tone: 'good',
+      title: t.kind === 'hidden' ? `Ticket to ${t.ticketed_to}, leave at the stop` : 'Return ticket costs less than one way',
+      headline: `${usd(t.price)} in place of ${usd(t.normal_price)}`,
+      detail: `${carriers(trick)} · ${label.toLowerCase()} · you save ${usd(t.saving)}`,
+      wayId: trick.id, day, cabin: focus,
+    })
+  }
+
+  const mine = min(awards(inCabin(onDay, focus)).filter((w) => w.reach && w.reach.status !== 'short'), (w) => w.estUsd)
+  if (mine?.award && mine.id !== cheapestAward?.id) {
+    finds.push({
+      key: 'mine', tone: 'award', title: 'Lowest award with your points',
+      headline: `${miles(mine.award.miles)} miles + ${usd(mine.award.taxes_usd)}`,
+      detail: mine.reach!.text,
+      wayId: mine.id, day, cabin: focus,
+    })
+  }
+
+  const cashCheap = min(inCabin(onDay, focus).filter((w) => w.cash && !w.trick), (w) => w.estUsd)
   const level = cash?.cabins[focus]?.price_level
   if (cashCheap) {
     finds.push({

@@ -1,8 +1,10 @@
 from __future__ import annotations
 
 import asyncio
+import json
 from datetime import date
 from functools import lru_cache
+from pathlib import Path
 
 import airportsdata
 
@@ -14,6 +16,8 @@ from app.cache import Cache
 from app.config import load_settings
 from app.engine.awards import AwardSearchResult, search_awards
 from app.engine.geo import is_airport
+from app.engine.programs import PROGRAMS
+from app.engine.tricks import TrickResult, search_tricks
 from app.sources.seats_aero import SeatsAeroClient, SeatsAeroError
 from app.sources.serpapi_flights import TRAVEL_CLASS, CashSearchResult, SerpApiError, SerpApiFlightsClient
 
@@ -141,6 +145,34 @@ async def cash_all(origin: str, destination: str, day: date = Query(alias="date"
         else:
             out["cabins"][cabin] = res.model_dump()
     return out
+
+
+@app.get("/api/tricks", response_model=TrickResult)
+async def tricks(
+    origin: str,
+    destination: str,
+    day: date = Query(alias="date"),
+    cabin: str = "business",
+    currency: str = "USD",
+) -> TrickResult:
+    """Return-ticket and hidden-city fares that beat the one-way fare (3 SerpApi searches, cached)."""
+    if cabin not in TRAVEL_CLASS:
+        raise HTTPException(422, f"cabin must be one of {list(TRAVEL_CLASS)}")
+    if not serp.configured:
+        raise HTTPException(503, "Fare tricks are off: SERPAPI_KEY is not set.")
+    try:
+        return await search_tricks(serp, _airport(origin), _airport(destination), day, cabin, currency.upper())
+    except SerpApiError as exc:
+        raise HTTPException(502, str(exc)) from exc
+
+
+@app.get("/api/transfers")
+def transfers() -> dict:
+    data = json.loads((Path(__file__).parent / "data" / "transfers.json").read_text())
+    return {
+        "currencies": data["currencies"],
+        "programs": [{"id": k, "name": v.name, "alliance": v.alliance} for k, v in sorted(PROGRAMS.items(), key=lambda kv: kv[1].name)],
+    }
 
 
 @app.get("/api/cash", response_model=CashSearchResult)

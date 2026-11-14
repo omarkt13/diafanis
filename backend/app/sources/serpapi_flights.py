@@ -72,18 +72,37 @@ class SerpApiFlightsClient:
         return bool(self._settings.serpapi_key)
 
     async def one_way(self, origin: str, destination: str, day: date, cabin: str, currency: str) -> CashSearchResult:
+        return await self.search(origin, [destination], day, cabin, currency)
+
+    async def search(
+        self,
+        origin: str,
+        destinations: list[str],
+        day: date,
+        cabin: str,
+        currency: str,
+        return_date: date | None = None,
+    ) -> CashSearchResult:
+        """One SerpApi search. Several destinations go in one call (comma list).
+
+        With return_date the result lists outbound flights, and each price is the
+        total for the round trip with the cheapest matching return.
+        """
+        dest = ",".join(d.upper() for d in destinations)
         params = {
             "engine": "google_flights",
             "departure_id": origin.upper(),
-            "arrival_id": destination.upper(),
+            "arrival_id": dest,
             "outbound_date": day.isoformat(),
-            "type": "2",
+            "type": "1" if return_date else "2",
             "travel_class": str(TRAVEL_CLASS[cabin]),
             "currency": currency,
             "hl": "en",
         }
+        if return_date:
+            params["return_date"] = return_date.isoformat()
         body = await self._get(params)
-        return normalize(body, origin.upper(), destination.upper(), day.isoformat(), cabin, currency)
+        return normalize(body, origin.upper(), dest, day.isoformat(), cabin, currency)
 
     async def _get(self, params: dict[str, str]) -> dict[str, Any]:
         if not self._settings.serpapi_key:

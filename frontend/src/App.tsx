@@ -3,7 +3,8 @@ import { airlineName } from './airlines'
 import { DEFAULT_FILTERS, Filters, type FilterState } from './Filters'
 import { CABIN_LABEL, dayLabel, miles, usd } from './format'
 import { SearchCard } from './SearchCard'
-import type { AwardSearchResult, Cabin, CashAll, Places, SearchParams, Way } from './types'
+import type { AwardSearchResult, Cabin, CashAll, Places, SearchParams, TransferData, TrickResult, Wallet, Way } from './types'
+import { WalletDialog } from './WalletDialog'
 import { buildFinds, buildWays, type Find } from './ways'
 import { WayRow } from './WayRow'
 
@@ -46,9 +47,26 @@ export default function App() {
   const [openId, setOpenId] = useState<string | null>(null)
   const [shown, setShown] = useState(PAGE)
   const [places, setPlaces] = useState<Places>({})
+  const [tricks, setTricks] = useState<Partial<Record<Cabin, TrickResult>>>({})
+  const [wallet, setWallet] = useState<Wallet>(() => stored('wallet', { programs: {}, currencies: {} }))
+  const [transfers, setTransfers] = useState<TransferData | null>(null)
+  const [walletOpen, setWalletOpen] = useState(false)
+  const focusCabin: Cabin = cabin === 'any' ? 'business' : cabin
 
   useEffect(() => store('cabin', cabin), [cabin])
   useEffect(() => store('cpm', filters.centsPerMile), [filters.centsPerMile])
+  useEffect(() => store('wallet', wallet), [wallet])
+  useEffect(() => { fetch('/api/transfers').then((r) => r.json()).then(setTransfers).catch(() => {}) }, [])
+
+  // Fare tricks for the cabin in view: 3 more cash searches, only when cash fares work.
+  useEffect(() => {
+    if (!search || !cash || tricks[focusCabin]) return
+    const ctl = new AbortController()
+    const q = new URLSearchParams({ origin: search.origin, destination: search.destination, date: search.date, cabin: focusCabin })
+    fetch(`/api/tricks?${q}`, { signal: ctl.signal }).then((r) => (r.ok ? r.json() : null))
+      .then((d) => d && setTricks((t) => ({ ...t, [focusCabin]: d }))).catch(() => {})
+    return () => ctl.abort()
+  }, [search, cash, focusCabin]) // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     if (!search) return
@@ -56,7 +74,7 @@ export default function App() {
     window.history.replaceState(null, '', `?${q}`)
     const ctl = new AbortController()
     const api = new URLSearchParams({ origin: search.origin, destination: search.destination, date: search.date })
-    setBusy(true); setError(null); setAwards(null); setCash(null); setCashNote(null); setDay(search.date); setOpenId(null); setShown(PAGE)
+    setBusy(true); setError(null); setAwards(null); setCash(null); setTricks({}); setCashNote(null); setDay(search.date); setOpenId(null); setShown(PAGE)
 
     const get = async (url: string) => {
       const r = await fetch(url, { signal: ctl.signal })
@@ -71,13 +89,17 @@ export default function App() {
     return () => ctl.abort()
   }, [search])
 
-  const ways = useMemo(() => buildWays(awards, cash, search?.date ?? '', filters.centsPerMile), [awards, cash, search, filters.centsPerMile])
+  const ways = useMemo(
+    () => buildWays(awards, cash, search?.date ?? '', filters.centsPerMile, Object.values(tricks), wallet, transfers),
+    [awards, cash, search, filters.centsPerMile, tricks, wallet, transfers],
+  )
 
   useEffect(() => {
     const codes = new Set<string>()
     for (const w of ways) {
       w.award?.legs.forEach((l) => [l.origin, l.destination, ...l.connections].forEach((c) => codes.add(c)))
       w.cash?.segments.forEach((s) => { codes.add(s.origin); codes.add(s.destination) })
+      if (w.trick?.ticketed_to) codes.add(w.trick.ticketed_to)
     }
     const missing = [...codes].filter((c) => !places[c])
     if (!missing.length) return
@@ -91,6 +113,7 @@ export default function App() {
   const matches = (w: Way) =>
     (cabin === 'any' || w.cabin === cabin) &&
     filters.methods.includes(w.method) &&
+    (!filters.onlyMine || !w.award || (!!w.reach && w.reach.status !== 'short')) &&
     w.stops <= filters.maxStops &&
     (!filters.programs.length || (w.award ? filters.programs.includes(w.award.program) : false)) &&
     (!filters.airlines.length || w.carriers.some((c) => filters.airlines.includes(c))) &&
@@ -104,7 +127,7 @@ export default function App() {
   const list = tab === 'best' ? byBest : byCheap
   const top = tab === 'best' ? list.slice(0, 4) : []
   const rest = list.slice(top.length, top.length + shown)
-  const lowestCash = Math.min(...onDay.filter((w) => w.cash).map((w) => w.estUsd))
+  const lowestCash = Math.min(...onDay.filter((w) => w.cash && !w.trick).map((w) => w.estUsd))
   const finds = useMemo(() => buildFinds(ways, day, cabin, cash), [ways, day, cabin, cash])
 
   const dayBest = (d: string) => {
@@ -116,7 +139,7 @@ export default function App() {
   const goFind = (f: Find) => {
     if (f.cabin) setCabin(f.cabin)
     if (f.day) setDay(f.day)
-    setFilters({ ...filters, methods: DEFAULT_FILTERS.methods, programs: [], airlines: [], maxStops: 9, maxHours: 0, maxAgeDays: 0 })
+    setFilters({ ...filters, methods: DEFAULT_FILTERS.methods, onlyMine: false, programs: [], airlines: [], maxStops: 9, maxHours: 0, maxAgeDays: 0 })
     setTab('cheapest'); setShown(200)
     if (f.wayId) {
       setOpenId(f.wayId)
@@ -132,7 +155,7 @@ export default function App() {
       {w && <span className="block text-sm text-sub sm:ml-2 sm:inline">from {label(w)}</span>}
     </button>
   )
-  const rowProps = (w: Way) => ({ w, places, open: openId === w.id, onToggle: () => setOpenId(openId === w.id ? null : w.id), lowest: !!w.cash && w.estUsd === lowestCash })
+  const rowProps = (w: Way) => ({ w, places, open: openId === w.id, onToggle: () => setOpenId(openId === w.id ? null : w.id), lowest: !!w.cash && !w.trick && w.estUsd === lowestCash })
 
   return (
     <div className="mx-auto max-w-[1024px] px-4 pt-4 pb-16">
@@ -141,8 +164,12 @@ export default function App() {
           <svg width="24" height="24" viewBox="0 0 24 24" className="text-brand" fill="currentColor" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z" /></svg>
           <span className="font-medium">Waypoint</span>
         </div>
-        {awards?.rate_limit_remaining != null && <span className="text-xs text-sub">{awards.rate_limit_remaining} award searches left today</span>}
+        <div className="flex items-center gap-3">
+          {awards?.rate_limit_remaining != null && <span className="hidden text-xs text-sub sm:inline">{awards.rate_limit_remaining} award searches left today</span>}
+          <button className="rounded-full border border-line px-4 py-1.5 text-sm font-medium text-brand hover:bg-hover" onClick={() => setWalletOpen(true)}>My points</button>
+        </div>
       </header>
+      {walletOpen && transfers && <WalletDialog wallet={wallet} transfers={transfers} onSave={setWallet} onClose={() => setWalletOpen(false)} />}
 
       <SearchCard initial={initial ?? { origin: 'DXB', destination: 'GVA', date: '2026-11-20', flex: 1 }} cabin={cabin} onCabin={setCabin} busy={busy} onSearch={setSearch} />
 
@@ -219,7 +246,7 @@ export default function App() {
 
               {awards && (
                 <p className="text-xs text-sub">
-                  {ways.length} options from {awards.api_calls} award searches{cash ? ' and 4 cash searches' : ''}. Joined awards checked through {awards.hubs.join(', ')}.
+                  {ways.length} options from {awards.api_calls} award searches{cash ? ` and ${4 + Object.values(tricks).reduce((n, t) => n + Math.max(0, t.api_calls - 1), 0)} cash searches` : ''}. Joined awards checked through {awards.hubs.join(', ')}.
                   Award seats come from the Seats.aero cache and can be gone. Award taxes in dollars are approximate.
                 </p>
               )}
