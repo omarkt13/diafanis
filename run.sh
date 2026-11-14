@@ -13,5 +13,7 @@ if [ ! -f static/index.html ] || [ -n "$(find frontend/src frontend/index.html -
   else (cd frontend && npm install && npm run build); fi
 fi
 
+# HOST and PORT can also be in backend/.env
+if [ -f backend/.env ]; then set -a; . backend/.env; set +a; fi
 cd backend
 exec .venv/bin/uvicorn app.main:app --host "${HOST:-127.0.0.1}" --port "${PORT:-8000}"

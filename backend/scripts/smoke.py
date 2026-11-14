@@ -1,4 +1,4 @@
-"""Live check of both data sources. Uses 1 Seats.aero call and 1 SerpApi search.
+"""Live check of both data sources. Uses 1 Seats.aero call and 1 cash fare search.
 
 Run from backend/:  .venv/bin/python -m scripts.smoke [ORIGIN DEST YYYY-MM-DD]
 """
@@ -13,6 +13,7 @@ from pathlib import Path
 from app.cache import Cache
 from app.config import load_settings
 from app.sources.seats_aero import SeatsAeroClient
+from app.sources.google_flights import GoogleFlightsClient
 from app.sources.serpapi_flights import SerpApiFlightsClient
 
 
@@ -28,25 +29,22 @@ async def main() -> int:
         ok = False
         print(f"FAIL Seats.aero: {exc}")
 
-    serp = SerpApiFlightsClient(settings, cache)
-    if not serp.configured:
+    if settings.cash_source == "serpapi":
+        cash, label = SerpApiFlightsClient(settings, cache), "SerpApi"
+    else:
+        cash, label = GoogleFlightsClient(cache), "Google Flights (direct)"
+    if not cash.configured:
         ok = False
-        print("FAIL SerpApi: SERPAPI_KEY is not set")
+        print(f"FAIL {label}: SERPAPI_KEY is not set")
     else:
         try:
-            raw = await serp._get({"engine": "google_flights", "departure_id": origin, "arrival_id": dest,
-                                   "outbound_date": day.isoformat(), "type": "2", "travel_class": "3", "currency": "USD", "hl": "en", "show_hidden": "true"})
-            res = await serp.one_way(origin, dest, day, "business", "USD")
+            res = await cash.one_way(origin, dest, day, "business", "USD")
             airlines = sorted({a for it in res.itineraries for a in it.airlines})
-            print(f"PASS SerpApi: {len(res.itineraries)} business fares, lowest {res.lowest_price}, airlines: {', '.join(airlines)}")
-            out = Path(__file__).parent.parent / "tests" / "fixtures"
-            out.mkdir(exist_ok=True)
-            raw.pop("search_metadata", None), raw.pop("search_parameters", None)
-            (out / "serpapi_one_way.json").write_text(json.dumps(raw, indent=1))
-            print(f"     saved the response to {out / 'serpapi_one_way.json'} for tests")
+            print(f"PASS {label}: {len(res.itineraries)} business fares, lowest {res.lowest_price}, "
+                  f"usual range {res.typical_range}, airlines: {', '.join(airlines)}")
         except Exception as exc:  # noqa: BLE001
             ok = False
-            print(f"FAIL SerpApi: {exc}")
+            print(f"FAIL {label}: {exc}")
     return 0 if ok else 1
 
 

@@ -21,12 +21,19 @@ from app.engine.geo import HUBS, is_airport
 from app.engine.programs import PROGRAMS
 from app.engine.tricks import BEYOND_POOL, TrickResult, search_tricks
 from app.sources.seats_aero import SeatsAeroClient, SeatsAeroError
+from app.sources.google_flights import GoogleFlightsClient
 from app.sources.serpapi_flights import TRAVEL_CLASS, CashSearchResult, SerpApiError, SerpApiFlightsClient
 
 settings = load_settings()
 cache = Cache(settings.cache_path)
 seats = SeatsAeroClient(settings, cache)
-serp = SerpApiFlightsClient(settings, cache)
+# The cash fare source. Both clients have the same methods.
+if settings.cash_source == "serpapi":
+    serp = SerpApiFlightsClient(settings, cache)
+    CASH_SOURCE_NAME = "serpapi google_flights"
+else:
+    serp = GoogleFlightsClient(cache, settings.cash_cache_minutes)
+    CASH_SOURCE_NAME = GoogleFlightsClient.name
 
 app = FastAPI(title="Waypoint")
 
@@ -63,7 +70,7 @@ def _airport(code: str) -> str:
 def status() -> dict:
     return {
         "awards": {"source": "seats.aero", "rate_limit_remaining": seats.rate_limit_remaining},
-        "cash": {"source": "serpapi google_flights", "configured": serp.configured},
+        "cash": {"source": CASH_SOURCE_NAME, "configured": serp.configured},
     }
 
 

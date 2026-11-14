@@ -7,6 +7,7 @@ from fastapi.testclient import TestClient
 def client(monkeypatch, tmp_path, password=None):
     monkeypatch.setenv("CACHE_PATH", str(tmp_path / "c.sqlite3"))
     monkeypatch.delenv("SERPAPI_KEY", raising=False)
+    monkeypatch.setenv("CASH_SOURCE", "serpapi")  # no test may call a live source
     if password:
         monkeypatch.setenv("APP_PASSWORD", password)
     else:

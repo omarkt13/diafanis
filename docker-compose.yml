@@ -1,0 +1,17 @@
+# Run Waypoint all the time on this computer:  docker compose up -d --build
+# It starts again after a restart of the computer (Docker must start at login).
+services:
+  waypoint:
+    build: .
+    restart: unless-stopped
+    env_file: backend/.env
+    environment:
+      CACHE_PATH: /data/cache.sqlite3
+    ports:
+      # Default: this computer only. For Tailscale or your network, put WAYPOINT_BIND=0.0.0.0
+      # in a file named .env next to this file, and set APP_PASSWORD in backend/.env.
+      - "${WAYPOINT_BIND:-127.0.0.1}:${WAYPOINT_PORT:-8000}:8000"
+    volumes:
+      - waypoint-data:/data
+volumes:
+  waypoint-data:

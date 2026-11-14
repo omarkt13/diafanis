@@ -22,6 +22,9 @@ class Settings:
     cache_path: str
     static_dir: Path
     app_password: str | None = None
+    # "google": read Google Flights directly, free. "serpapi": paid, needs SERPAPI_KEY.
+    cash_source: str = "google"
+    cash_cache_minutes: int = 120
     seats_aero_base: str = "https://seats.aero/partnerapi"
     serpapi_url: str = "https://serpapi.com/search.json"
 
@@ -33,5 +36,7 @@ def load_settings() -> Settings:
         cache_path=os.environ.get("CACHE_PATH", str(BACKEND_DIR / "cache.sqlite3")),
         static_dir=Path(os.environ.get("STATIC_DIR", REPO_DIR / "static")),
         app_password=os.environ.get("APP_PASSWORD") or None,
+        cash_source=(os.environ.get("CASH_SOURCE") or "google").lower(),
+        cash_cache_minutes=int(os.environ.get("CASH_CACHE_MINUTES") or 120),
         serpapi_url=os.environ.get("SERPAPI_URL", "https://serpapi.com/search.json"),
     )

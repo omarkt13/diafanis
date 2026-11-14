@@ -15,45 +15,59 @@ Three views:
 - **Best value**: cost for what you get. A business seat counts as 3× economy, premium 1.5×, first 4.5×. Each stop adds $30 and each hour above the fastest route adds $15. Old award data ranks lower. The parameters are `VALUE` in `frontend/src/routes.ts`.
 - **Tricks**: a separate list, always in order of cost: return ticket flown one way, hidden-city ticket, two award legs joined at a hub, a seat through the program of another airline, and (round trip) two one-way tickets or a mix of cash and miles.
 
-## What one search costs
+## Data sources and cost
 
-| Search | Calls |
-|---|---|
-| Award seats and joined awards, each direction | 3 Seats.aero calls (limit 1,000 each day) |
-| Cash fares in 4 cabins, each direction | 4 SerpApi searches |
-| Fare tricks, economy and business, each direction | 6 SerpApi searches one way, 2 for a round trip |
-| Round-trip ticket prices in 4 cabins | 4 SerpApi searches |
+| Data | Source | Cost |
+|---|---|---|
+| Award seats, joined awards | Seats.aero Pro API | 3 calls for each direction, limit 1,000 each day |
+| Cash fares, round-trip prices, fare tricks | Google Flights, read directly with the open-source libraries `fast-flights` and `fli` | Free, no key |
 
-A one-way search uses 3 Seats.aero calls and 10 SerpApi searches. A round trip uses 6 and 16.
-Results are cached for 30 minutes. Each cash search asks Google for its full list of fares (`show_hidden`), at the same cost.
+A one-way search sends approximately 14 requests to Google and a round trip approximately 24. Cash results are
+cached for 2 hours (`CASH_CACHE_MINUTES`). Google can slow down or block a computer that sends too many
+requests. If that occurs, the page shows awards only and a note. Wait, or set `CASH_SOURCE=serpapi` with a
+`SERPAPI_KEY` to use the paid source.
 
-## Run
+## Run it all the time on your computer
+
+1. Make the settings file and put your Seats.aero key in it:
 
 ```bash
 cp backend/.env.example backend/.env
 ```
 
-Put your two keys in `backend/.env`, then:
+2. Start it as a service. Use one of these.
+
+macOS or Linux, no Docker (needs Python 3.11+ and bun or npm):
 
 ```bash
-./run.sh
+scripts/install-service.sh
 ```
 
-Open http://127.0.0.1:8000. The server listens on your computer only.
-
-## Host it
-
-The repo has a `Dockerfile` and a `render.yaml` blueprint. On a host, set three values:
-`SEATS_AERO_KEY`, `SERPAPI_KEY` and `APP_PASSWORD`. With `APP_PASSWORD` set, the browser asks for
-that password (any user name). Do not host the app without it: each search uses your API quota.
+All systems, with Docker:
 
 ```bash
-docker build -t waypoint .
+docker compose up -d --build
 ```
 
+3. Open http://127.0.0.1:8000. The app starts again after a restart of the computer.
+
+To try it one time without a service, run `./run.sh`.
+
+### Reach it from your other devices (Tailscale)
+
+- Service script: add `HOST=0.0.0.0` and `APP_PASSWORD=...` to `backend/.env`, then run `scripts/install-service.sh` again.
+- Docker: put `WAYPOINT_BIND=0.0.0.0` in a file `.env` next to `docker-compose.yml`, add `APP_PASSWORD=...` to `backend/.env`, then run `docker compose up -d`.
+- Open `http://<tailscale name of the computer>:8000`. The browser asks for the password (any user name).
+
+The same steps work on a small server.
+
+## Update
+
 ```bash
-docker run -p 8000:8000 --env-file backend/.env -e APP_PASSWORD=change-me waypoint
+git pull
 ```
+
+Then run the service command again (`scripts/install-service.sh` or `docker compose up -d --build`).
 
 ## Check the data sources
 
@@ -61,7 +75,7 @@ docker run -p 8000:8000 --env-file backend/.env -e APP_PASSWORD=change-me waypoi
 cd backend && .venv/bin/python -m scripts.smoke
 ```
 
-This uses 1 Seats.aero call and 1 SerpApi search, and saves the SerpApi response as a test fixture.
+This uses 1 Seats.aero call and 1 cash fare search.
 
 ## Your points
 

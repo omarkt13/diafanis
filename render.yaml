@@ -8,7 +8,5 @@ services:
     envVars:
       - key: SEATS_AERO_KEY
         sync: false
-      - key: SERPAPI_KEY
-        sync: false
       - key: APP_PASSWORD
         sync: false
