@@ -19,6 +19,7 @@ Darwin)
   launchctl bootout "gui/$(id -u)/$NAME" 2>/dev/null || true
   if [ "${1:-}" = "remove" ]; then rm -f "$PLIST"; echo "Removed."; exit 0; fi
   mkdir -p "$HOME/Library/LaunchAgents"
+  : > "$LOG"  # start with an empty log
   cat > "$PLIST" <<PLIST
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -29,6 +30,7 @@ Darwin)
   <key>EnvironmentVariables</key><dict><key>PATH</key><string>$HOME/.bun/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string></dict>
   <key>RunAtLoad</key><true/>
   <key>KeepAlive</key><true/>
+  <key>ThrottleInterval</key><integer>30</integer>
   <key>StandardOutPath</key><string>$LOG</string>
   <key>StandardErrorPath</key><string>$LOG</string>
 </dict></plist>
