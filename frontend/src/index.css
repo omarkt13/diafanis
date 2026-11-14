@@ -1,8 +1,24 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Google Sans Text", "Roboto", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-ink: light-dark(#202124, #e8eaed);
+  --color-sub: light-dark(#5f6368, #9aa0a6);
+  --color-line: light-dark(#dadce0, #3c4043);
+  --color-page: light-dark(#ffffff, #202124);
+  --color-raise: light-dark(#ffffff, #292a2d);
+  --color-hover: light-dark(#f1f3f4, #303134);
+  --color-brand: light-dark(#1a73e8, #8ab4f8);
+  --color-brand-soft: light-dark(#e8f0fe, #283142);
+  --color-good: light-dark(#188038, #81c995);
+  --color-good-soft: light-dark(#e6f4ea, #1e3a2a);
+  --color-warn: light-dark(#b06000, #fdd663);
+  --color-bad: light-dark(#c5221f, #f28b82);
+  --color-award: light-dark(#7b3fc4, #c58af9);
+  --color-award-soft: light-dark(#f3e8fd, #33264a);
 }
 
 :root { color-scheme: light dark; }
-body { @apply bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 antialiased; }
+body { background: var(--color-page); color: var(--color-ink); -webkit-font-smoothing: antialiased; }
+button, select, input { font: inherit; }
+button { cursor: pointer; }

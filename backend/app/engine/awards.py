@@ -62,6 +62,7 @@ class AwardOption(BaseModel):
     miles: int
     taxes: float
     taxes_currency: str | None
+    taxes_usd: float
     seats: int | None
     data_age_hours: float
     legs: list[Leg]
@@ -168,11 +169,25 @@ def _option(kind: str, src: str, cabin: str, legs: list[Leg], now: datetime, not
         miles=sum(leg.miles for leg in legs),
         taxes=round(sum(leg.taxes for leg in legs), 2),
         taxes_currency=next(iter(currencies)) if len(currencies) == 1 else (None if not currencies else "mixed"),
+        taxes_usd=round(sum(to_usd(leg.taxes, leg.taxes_currency) for leg in legs), 2),
         seats=min(seat_counts) if len(seat_counts) == len(legs) else None,
         data_age_hours=_age_hours([leg.updated_at for leg in legs], now),
         legs=legs,
         note=note,
     )
+
+
+# Approximate USD per unit, only to rank awards against cash fares. SAR and AED
+# are pegged to the dollar; the others drift, so the UI marks the result with "≈".
+USD_PER = {
+    "USD": 1.0, "SAR": 0.2667, "AED": 0.2723, "QAR": 0.2747, "BHD": 2.65, "KWD": 3.25,
+    "CAD": 0.72, "AUD": 0.65, "EUR": 1.08, "GBP": 1.27, "CHF": 1.13, "BRL": 0.18,
+    "SGD": 0.75, "JPY": 0.0066, "TRY": 0.024, "MXN": 0.054, "SEK": 0.095,
+}
+
+
+def to_usd(amount: float, currency: str | None) -> float:
+    return round(amount * USD_PER.get(currency or "USD", 1.0), 2)
 
 
 JOINED_NOTE = (
