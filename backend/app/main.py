@@ -1,23 +1,25 @@
 from __future__ import annotations
 
 import asyncio
+import base64
 import json
+import secrets
 from datetime import date
 from functools import lru_cache
 from pathlib import Path
 
 import airportsdata
 
-from fastapi import FastAPI, HTTPException, Query
-from fastapi.responses import FileResponse
+from fastapi import FastAPI, HTTPException, Query, Request
+from fastapi.responses import FileResponse, Response
 from fastapi.staticfiles import StaticFiles
 
 from app.cache import Cache
 from app.config import load_settings
 from app.engine.awards import AwardSearchResult, search_awards
-from app.engine.geo import is_airport
+from app.engine.geo import HUBS, is_airport
 from app.engine.programs import PROGRAMS
-from app.engine.tricks import TrickResult, search_tricks
+from app.engine.tricks import BEYOND_POOL, TrickResult, search_tricks
 from app.sources.seats_aero import SeatsAeroClient, SeatsAeroError
 from app.sources.serpapi_flights import TRAVEL_CLASS, CashSearchResult, SerpApiError, SerpApiFlightsClient
 
@@ -26,7 +28,28 @@ cache = Cache(settings.cache_path)
 seats = SeatsAeroClient(settings, cache)
 serp = SerpApiFlightsClient(settings, cache)
 
-app = FastAPI(title="Travel tool")
+app = FastAPI(title="Waypoint")
+
+
+@app.middleware("http")
+async def password_gate(request: Request, call_next):
+    """With APP_PASSWORD set, the whole app asks the browser for that password (any user name)."""
+    if settings.app_password and request.url.path != "/healthz":
+        given = ""
+        header = request.headers.get("authorization", "")
+        if header.lower().startswith("basic "):
+            try:
+                given = base64.b64decode(header[6:]).decode().partition(":")[2]
+            except Exception:  # noqa: BLE001
+                given = ""
+        if not secrets.compare_digest(given.encode(), settings.app_password.encode()):
+            return Response("Password required", status_code=401, headers={"WWW-Authenticate": 'Basic realm="Waypoint"'})
+    return await call_next(request)
+
+
+@app.get("/healthz", include_in_schema=False)
+def healthz() -> dict:
+    return {"ok": True}
 
 
 def _airport(code: str) -> str:
@@ -91,6 +114,9 @@ async def award_segments(availability_id: str, flights: str) -> dict:
     return {"segments": [], "booking_links": []}
 
 
+_MAJOR = set(HUBS) | set(BEYOND_POOL)
+
+
 @lru_cache(maxsize=1)
 def _airport_index() -> list[dict]:
     rows = []
@@ -115,9 +141,10 @@ def airports(q: str = Query(min_length=1, max_length=40)) -> list[dict]:
             rank = 3
         else:
             continue
-        # Prefer the big airports of a city: "International" in the name is a fair signal.
-        scored.append((rank, 0 if "international" in name else 1, a["city"], a))
-    return [a for *_, a in sorted(scored, key=lambda t: t[:3])[:8]]
+        # Prefer the big airports: first the known large ones, then "International" in the name.
+        major = 0 if a["code"] in _MAJOR else 1 if "international" in name else 2
+        scored.append((0 if rank == 0 else major, rank, len(a["city"]), a["city"], a["code"], a))
+    return [a for *_, a in sorted(scored, key=lambda t: t[:5])[:8]]
 
 
 @app.get("/api/airports/lookup")
@@ -147,6 +174,32 @@ async def cash_all(origin: str, destination: str, day: date = Query(alias="date"
     return out
 
 
+@app.get("/api/cash/roundtrip")
+async def cash_roundtrip(
+    origin: str, destination: str, day: date = Query(alias="date"), return_date: date = Query(), currency: str = "USD"
+) -> dict:
+    """Round-trip ticket prices for all four cabins (4 SerpApi searches, cached).
+
+    Each itinerary is an outbound flight; its price is the round-trip total with the cheapest return.
+    """
+    if not serp.configured:
+        raise HTTPException(503, "Cash fares are off: SERPAPI_KEY is not set.")
+    if return_date < day:
+        raise HTTPException(422, "return_date is before date")
+    o, d = _airport(origin), _airport(destination)
+    cabins = list(TRAVEL_CLASS)
+    results = await asyncio.gather(
+        *(serp.search(o, [d], day, c, currency.upper(), return_date=return_date) for c in cabins), return_exceptions=True
+    )
+    out: dict = {"cabins": {}, "errors": {}}
+    for cabin, res in zip(cabins, results):
+        if isinstance(res, Exception):
+            out["errors"][cabin] = str(res)
+        else:
+            out["cabins"][cabin] = res.model_dump()
+    return out
+
+
 @app.get("/api/tricks", response_model=TrickResult)
 async def tricks(
     origin: str,
@@ -154,6 +207,7 @@ async def tricks(
     day: date = Query(alias="date"),
     cabin: str = "business",
     currency: str = "USD",
+    include_return: bool = True,
 ) -> TrickResult:
     """Return-ticket and hidden-city fares that beat the one-way fare (3 SerpApi searches, cached)."""
     if cabin not in TRAVEL_CLASS:
@@ -161,7 +215,7 @@ async def tricks(
     if not serp.configured:
         raise HTTPException(503, "Fare tricks are off: SERPAPI_KEY is not set.")
     try:
-        return await search_tricks(serp, _airport(origin), _airport(destination), day, cabin, currency.upper())
+        return await search_tricks(serp, _airport(origin), _airport(destination), day, cabin, currency.upper(), include_return)
     except SerpApiError as exc:
         raise HTTPException(502, str(exc)) from exc
 

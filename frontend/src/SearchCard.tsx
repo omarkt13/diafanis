@@ -1,13 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
-import { CABIN_LABEL, dayLabel, shiftDate } from './format'
-import type { Cabin, SearchParams } from './types'
+import { shiftDate } from './format'
+import type { SearchParams } from './types'
 
 interface Airport { code: string; city: string; name: string; country: string }
 
 interface Props {
   initial: SearchParams
-  cabin: Cabin | 'any'
-  onCabin: (c: Cabin | 'any') => void
   busy: boolean
   onSearch: (p: SearchParams) => void
 }
@@ -81,7 +79,7 @@ function AirportField({ label, code, onCode }: { label: string; code: string; on
   )
 }
 
-export function SearchCard({ initial, cabin, onCabin, busy, onSearch }: Props) {
+export function SearchCard({ initial, busy, onSearch }: Props) {
   const [p, setP] = useState<SearchParams>(initial)
   const [swapKey, setSwapKey] = useState(0)
 
@@ -89,11 +87,12 @@ export function SearchCard({ initial, cabin, onCabin, busy, onSearch }: Props) {
     <form className="relative rounded-lg bg-raise px-4 pt-2 pb-10 shadow-[0_1px_3px_rgb(60_64_67/0.3),0_4px_8px_3px_rgb(60_64_67/0.15)] sm:px-6"
       onSubmit={(e) => { e.preventDefault(); onSearch(p) }}>
       <div className="mb-2 flex flex-wrap items-center gap-1">
-        <span className={mini + ' cursor-default'}>One way</span>
-        <select className={mini} aria-label="Cabin" value={cabin} onChange={(e) => onCabin(e.target.value as Cabin | 'any')}>
-          <option value="any">Any cabin</option>
-          {(['economy', 'premium', 'business', 'first'] as Cabin[]).map((c) => <option key={c} value={c}>{CABIN_LABEL[c]}</option>)}
+        <select className={mini} aria-label="Trip type" value={p.returnDate ? 'rt' : 'ow'}
+          onChange={(e) => setP({ ...p, returnDate: e.target.value === 'rt' ? shiftDate(p.date, 7) : null })}>
+          <option value="ow">One way</option>
+          <option value="rt">Round trip</option>
         </select>
+        <span className={mini + ' cursor-default'}>All cabins</span>
         <select className={mini} aria-label="Date range" value={p.flex} onChange={(e) => setP({ ...p, flex: Number(e.target.value) })}>
           <option value={0}>Exact date</option>
           <option value={1}>± 1 day</option>
@@ -113,11 +112,20 @@ export function SearchCard({ initial, cabin, onCabin, busy, onSearch }: Props) {
           </button>
         </div>
         <div className={box + ' flex items-center gap-1 !px-2'}>
-          <input type="date" aria-label="Departure" className="min-w-0 flex-1 bg-transparent px-2 outline-none" value={p.date} required
-            onChange={(e) => setP({ ...p, date: e.target.value })} />
-          <span className="hidden text-sm text-sub lg:inline">{p.date && dayLabel(p.date).split(' ')[0]}</span>
-          <button type="button" aria-label="Day before" className="h-9 w-9 rounded-full text-sub hover:bg-hover" onClick={() => setP({ ...p, date: shiftDate(p.date, -1) })}>‹</button>
-          <button type="button" aria-label="Day after" className="h-9 w-9 rounded-full text-sub hover:bg-hover" onClick={() => setP({ ...p, date: shiftDate(p.date, 1) })}>›</button>
+          <input type="date" aria-label="Departure" className="min-w-0 flex-1 bg-transparent px-1 outline-none" value={p.date} required
+            onChange={(e) => setP({ ...p, date: e.target.value, returnDate: p.returnDate && p.returnDate < e.target.value ? e.target.value : p.returnDate })} />
+          {p.returnDate ? (
+            <>
+              <span className="h-8 w-px bg-line" />
+              <input type="date" aria-label="Return" className="min-w-0 flex-1 bg-transparent px-1 outline-none" value={p.returnDate} min={p.date} required
+                onChange={(e) => setP({ ...p, returnDate: e.target.value })} />
+            </>
+          ) : (
+            <>
+              <button type="button" aria-label="Day before" className="h-9 w-9 rounded-full text-sub hover:bg-hover" onClick={() => setP({ ...p, date: shiftDate(p.date, -1) })}>‹</button>
+              <button type="button" aria-label="Day after" className="h-9 w-9 rounded-full text-sub hover:bg-hover" onClick={() => setP({ ...p, date: shiftDate(p.date, 1) })}>›</button>
+            </>
+          )}
         </div>
       </div>
 

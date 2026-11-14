@@ -1,5 +1,4 @@
 export type Cabin = 'economy' | 'premium' | 'business' | 'first'
-export type Method = 'cash' | 'award' | 'joined' | 'return' | 'hidden'
 
 export interface Leg {
   availability_id: string
@@ -99,6 +98,7 @@ export interface SearchParams {
   destination: string
   date: string
   flex: number
+  returnDate: string | null
 }
 
 export interface Segment {
@@ -112,27 +112,55 @@ export interface Segment {
   note?: string | null
 }
 
-/** One way to get from A to B: a cash fare, an award, or two joined award legs. */
-export interface Way {
+/** One fare for a route: a cash price or an award, in one cabin. */
+export interface Offer {
   id: string
-  method: Method
   cabin: Cabin
+  kind: 'cash' | 'award'
+  usd: number // cost in dollars; miles are converted with the "value of a mile" setting
+  award?: AwardOption
+  cpp: number | null
+  cashRef: number | null
+  reach: Reach | null
+  partner: boolean // award booked through a program of another airline
+  belowTypical: boolean
+}
+
+/** One set of flights from A to B, with every fare found for it. */
+export interface Route {
+  key: string
+  day: string
+  origin: string
+  destination: string
+  flights: string[]
+  carriers: string[]
   departs_at: string
   arrives_at: string
   duration_minutes: number
   stops: number
   via: string[]
-  carriers: string[]
-  flights: string[]
   ground: boolean
-  estUsd: number
-  score: number
-  cpp: number | null
-  cashRef: number | null
-  award?: AwardOption
-  cash?: CashItinerary
+  segments: Segment[] | null
+  legs: Leg[] | null
+  offers: Offer[]
+}
+
+export interface Ranked { route: Route; pick: Offer; reasons: string[]; score: number }
+
+export interface TrickItem {
+  id: string
+  kind: 'return' | 'hidden' | 'joined' | 'partner' | 'split'
+  cabin: Cabin
+  usd: number
+  compareUsd: number | null
+  title: string
+  sub: string
   trick?: Trick
+  award?: AwardOption
+  route?: Route
+  offer?: Offer
   reach?: Reach | null
+  parts?: string[]
 }
 
 export interface Trick {

@@ -8,7 +8,8 @@ See README.md for what a search does and how to run it.
 - `backend/` FastAPI. `app/sources/` are API clients (Seats.aero, SerpApi). `app/engine/` is the logic:
   `awards.py` (joins award legs), `tricks.py` (return-ticket and hidden-city fares), `geo.py` (hub choice).
 - `frontend/` React + TypeScript + Tailwind v4, package manager bun. `bun run build` writes to `static/`,
-  which FastAPI serves. `src/ways.ts` merges all sources into one list and makes the "Found for you" cards.
+  which FastAPI serves. `src/routes.ts` groups all fares by flights (one row for each route, all cabins) and holds the
+  ranking for the three views: lowest cost, best value (`VALUE` parameters) and tricks. `src/useLeg.ts` loads one direction.
 - Tests: `cd backend && .venv/bin/python -m pytest`. No test calls a live API.
 
 ## Rules

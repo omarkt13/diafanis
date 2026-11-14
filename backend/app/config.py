@@ -21,6 +21,7 @@ class Settings:
     serpapi_key: str | None
     cache_path: str
     static_dir: Path
+    app_password: str | None = None
     seats_aero_base: str = "https://seats.aero/partnerapi"
     serpapi_url: str = "https://serpapi.com/search.json"
 
@@ -31,5 +32,6 @@ def load_settings() -> Settings:
         serpapi_key=os.environ.get("SERPAPI_KEY") or None,
         cache_path=os.environ.get("CACHE_PATH", str(BACKEND_DIR / "cache.sqlite3")),
         static_dir=Path(os.environ.get("STATIC_DIR", REPO_DIR / "static")),
+        app_password=os.environ.get("APP_PASSWORD") or None,
         serpapi_url=os.environ.get("SERPAPI_URL", "https://serpapi.com/search.json"),
     )

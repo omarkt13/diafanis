@@ -144,13 +144,15 @@ def _minutes(segs: list[CashSegment]) -> int:
 
 
 async def search_tricks(
-    serp: SerpApiFlightsClient, origin: str, destination: str, day: date, cabin: str, currency: str = "USD"
+    serp: SerpApiFlightsClient, origin: str, destination: str, day: date, cabin: str, currency: str = "USD",
+    include_return: bool = True,
 ) -> TrickResult:
     calls_before = serp.calls_made
     beyond = pick_beyond(origin, destination)
     one_way = await serp.one_way(origin, destination, day, cabin, currency)
 
-    jobs = [serp.search(origin, [destination], day, cabin, currency, return_date=day + timedelta(days=n)) for n in RETURN_OFFSETS_DAYS]
+    offsets = RETURN_OFFSETS_DAYS if include_return else ()
+    jobs = [serp.search(origin, [destination], day, cabin, currency, return_date=day + timedelta(days=n)) for n in offsets]
     if beyond:
         jobs.append(serp.search(origin, beyond, day, cabin, currency))
     results = await asyncio.gather(*jobs, return_exceptions=True)
@@ -158,7 +160,7 @@ async def search_tricks(
     errors = [str(r) for r in results if isinstance(r, Exception)]
     rts = [
         ((day + timedelta(days=n)).isoformat(), r)
-        for n, r in zip(RETURN_OFFSETS_DAYS, results)
+        for n, r in zip(offsets, results)
         if isinstance(r, CashSearchResult)
     ]
     tricks = find_return_tricks(one_way, rts)

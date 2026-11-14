@@ -33,7 +33,7 @@ def search(departure_id: str, arrival_id: str, outbound_date: str, type: str = "
     via = [seg("TK 759", "Turkish Airlines", o, hub, day, "09:30", "13:20", 290), seg("TK 1919", "Turkish Airlines", hub, d, day, "15:30", "17:10", 220)]
     non = [seg("EK 89", "Emirates", o, d, day, "14:40", "18:45", 425)]
     if len(dests) > 1:  # hidden-city search: a through ticket that stops at the first listed... the real destination is not in the list
-        real = "GVA"
+        real = "GVA" if o != "GVA" else "DXB"
         beyond = dests[0]
         return {"best_flights": [], "other_flights": [
             item(3050 * k, [seg("EK 89", "Emirates", o, real, day, "14:40", "18:45", 425), seg("LX 352", "SWISS", real, beyond, day, "20:10", "20:55", 105)], 615),

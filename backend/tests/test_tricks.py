@@ -92,3 +92,9 @@ async def test_search_tricks_uses_four_calls_and_finds_both_kinds():
     assert r.api_calls == 4  # one-way (cached in real use), two return dates, one beyond search
     assert sorted(t.kind for t in r.tricks) == ["hidden", "return"]
     assert serp.seen[1][1] == date(2026, 11, 27) and serp.seen[2][1] == date(2026, 12, 4)
+
+
+async def test_search_tricks_without_return_search_skips_round_trip_calls():
+    serp = FakeSerp()
+    r = await search_tricks(serp, "RUH", "GVA", date(2026, 11, 20), "business", include_return=False)
+    assert r.api_calls == 2 and [t.kind for t in r.tricks] == ["hidden"]

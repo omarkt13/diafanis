@@ -1,19 +1,12 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
-import type { Method } from './types'
+import { CABIN_LABEL } from './format'
+import { CABINS, type Shape } from './routes'
+import type { Cabin } from './types'
 
-export interface FilterState {
-  maxStops: number
-  methods: Method[]
-  programs: string[] // empty: all
-  airlines: string[] // empty: all
-  maxHours: number // 0: any
-  maxAgeDays: number // 0: any
-  centsPerMile: number
-  onlyMine: boolean
-}
+export interface FilterState extends Shape { centsPerMile: number }
 
 export const DEFAULT_FILTERS: FilterState = {
-  maxStops: 9, methods: ['cash', 'award', 'joined', 'return', 'hidden'], programs: [], airlines: [], maxHours: 0, maxAgeDays: 0, centsPerMile: 1.2, onlyMine: false,
+  cabins: [...CABINS], pay: ['cash', 'award'], maxStops: 9, programs: [], airlines: [], maxHours: 0, maxAgeDays: 0, onlyMine: false, centsPerMile: 1.2,
 }
 
 function Chip({ label, active, children, onClear }: { label: string; active: boolean; children: ReactNode; onClear?: () => void }) {
@@ -59,28 +52,27 @@ interface Props {
   hasCash: boolean
 }
 
-const METHOD_LABEL: Record<Method, string> = {
-  cash: 'Cash fares', award: 'Awards (one booking)', joined: 'Joined award legs', return: 'Return-ticket fares', hidden: 'Hidden-city fares',
-}
-const METHODS = Object.keys(METHOD_LABEL) as Method[]
-
 export function Filters({ f, set, programs, airlines, hasCash }: Props) {
   const stopsLabel = f.maxStops === 0 ? 'Nonstop only' : f.maxStops === 1 ? '1 stop or fewer' : f.maxStops === 2 ? '2 stops or fewer' : 'Stops'
-  const methodsActive = f.methods.length < METHODS.length || f.onlyMine
+  const payActive = f.pay.length < 2 || f.onlyMine
+  const cabinsActive = f.cabins.length < CABINS.length
   return (
     <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0">
-      <Chip label={methodsActive ? (f.methods.length < METHODS.length ? `${f.methods.length} of ${METHODS.length} types` : 'My points') : 'Pay with'} active={methodsActive}
-        onClear={() => set({ ...f, methods: DEFAULT_FILTERS.methods, onlyMine: false })}>
-        <p className="mb-2 font-medium">Pay with</p>
-        {METHODS.map((m) => (
-          <Row key={m}>
-            <input type="checkbox" checked={f.methods.includes(m)} onChange={() => set({ ...f, methods: toggle(f.methods, m) })} />
-            {METHOD_LABEL[m]}
-            {m !== 'award' && m !== 'joined' && !hasCash && <span className="text-xs text-sub">(no data)</span>}
-          </Row>
+      <Chip label={cabinsActive ? f.cabins.map((c) => CABIN_LABEL[c].split(' ')[0]).join(', ') || 'No cabin' : 'All cabins'} active={cabinsActive}
+        onClear={() => set({ ...f, cabins: [...CABINS] })}>
+        <p className="mb-2 font-medium">Cabins</p>
+        {CABINS.map((c: Cabin) => (
+          <Row key={c}><input type="checkbox" checked={f.cabins.includes(c)} onChange={() => set({ ...f, cabins: CABINS.filter((x) => (x === c ? !f.cabins.includes(c) : f.cabins.includes(x))) })} />{CABIN_LABEL[c]}</Row>
         ))}
+      </Chip>
+
+      <Chip label={payActive ? (f.onlyMine ? 'My points' : f.pay[0] === 'cash' ? 'Cash only' : f.pay[0] === 'award' ? 'Miles only' : 'No payment') : 'Cash and miles'} active={payActive}
+        onClear={() => set({ ...f, pay: ['cash', 'award'], onlyMine: false })}>
+        <p className="mb-2 font-medium">Pay with</p>
+        <Row><input type="checkbox" checked={f.pay.includes('cash')} onChange={() => set({ ...f, pay: toggle(f.pay, 'cash') })} />Cash{!hasCash && <span className="text-xs text-sub">(no data)</span>}</Row>
+        <Row><input type="checkbox" checked={f.pay.includes('award')} onChange={() => set({ ...f, pay: toggle(f.pay, 'award') })} />Miles</Row>
         <div className="mt-2 border-t border-line pt-2">
-          <Row><input type="checkbox" checked={f.onlyMine} onChange={() => set({ ...f, onlyMine: !f.onlyMine })} />Awards: only with my points</Row>
+          <Row><input type="checkbox" checked={f.onlyMine} onChange={() => set({ ...f, onlyMine: !f.onlyMine })} />Only awards I can book with my points</Row>
         </div>
       </Chip>
 

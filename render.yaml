@@ -1,0 +1,14 @@
+# Render blueprint: New > Blueprint, pick this repository, then fill in the three values.
+services:
+  - type: web
+    name: waypoint
+    runtime: docker
+    plan: free
+    healthCheckPath: /healthz
+    envVars:
+      - key: SEATS_AERO_KEY
+        sync: false
+      - key: SERPAPI_KEY
+        sync: false
+      - key: APP_PASSWORD
+        sync: false
