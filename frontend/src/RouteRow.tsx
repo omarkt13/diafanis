@@ -98,6 +98,7 @@ export function RouteRow({ r, places, open, onToggle, view }: Props) {
                           {o.reach && <span className={o.reach.status === 'short' ? '' : 'text-good'}>{o.reach.text}</span>}
                         </div>
                       )}
+                      {o.kind === 'cash' && !!o.otherCabin?.length && <div className="mt-0.5 text-xs text-warn">Mixed cabin: {o.otherCabin.join(', ')}</div>}
                       {o.kind === 'cash' && o.belowTypical && <div className="mt-0.5 text-xs text-good">Below the usual price for this route</div>}
                     </div>
                   )

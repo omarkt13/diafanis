@@ -35,7 +35,7 @@ async def main() -> int:
     else:
         try:
             raw = await serp._get({"engine": "google_flights", "departure_id": origin, "arrival_id": dest,
-                                   "outbound_date": day.isoformat(), "type": "2", "travel_class": "3", "currency": "USD", "hl": "en"})
+                                   "outbound_date": day.isoformat(), "type": "2", "travel_class": "3", "currency": "USD", "hl": "en", "show_hidden": "true"})
             res = await serp.one_way(origin, dest, day, "business", "USD")
             airlines = sorted({a for it in res.itineraries for a in it.airlines})
             print(f"PASS SerpApi: {len(res.itineraries)} business fares, lowest {res.lowest_price}, airlines: {', '.join(airlines)}")

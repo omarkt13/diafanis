@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from contextvars import ContextVar
 from datetime import date
 from typing import Any
 
@@ -10,7 +11,13 @@ from app.cache import Cache
 from app.config import Settings
 
 CACHE_TTL_SECONDS = 30 * 60
+# Searches sent by the current request. calls_made on the client counts all
+# requests together, so it cannot give the count of one request.
+call_counter: ContextVar[list[int] | None] = ContextVar("call_counter", default=None)
 TRAVEL_CLASS = {"economy": 1, "premium": 2, "business": 3, "first": 4}
+# The first word of the travel_class text that SerpApi gives for each flight
+# ("Economy", "Premium Economy", "Business Class", "First Class").
+CLASS_WORD = {"economy": "economy", "premium": "premium", "business": "business", "first": "first"}
 
 
 class SerpApiError(RuntimeError):
@@ -41,6 +48,9 @@ class CashItinerary(BaseModel):
     segments: list[CashSegment]
     best: bool
     booking_token: str | None
+    # Flights that are not in the cabin of the search, for example "AF 1642 Economy"
+    # on a premium fare. Google sells these as one fare in the higher cabin.
+    other_cabin: list[str] = []
 
 
 class CashSearchResult(BaseModel):
@@ -98,6 +108,9 @@ class SerpApiFlightsClient:
             "travel_class": str(TRAVEL_CLASS[cabin]),
             "currency": currency,
             "hl": "en",
+            # Without this Google gives only its short list (9 fares for DXB-GVA
+            # business where the full list has 69). Same cost: 1 search.
+            "show_hidden": "true",
         }
         if return_date:
             params["return_date"] = return_date.isoformat()
@@ -113,6 +126,9 @@ class SerpApiFlightsClient:
             return cached
         resp = await self._http.get(self._settings.serpapi_url, params={**params, "api_key": self._settings.serpapi_key})
         self.calls_made += 1
+        counter = call_counter.get()
+        if counter is not None:
+            counter[0] += 1
         if resp.status_code != 200:
             raise SerpApiError(f"SerpApi returned {resp.status_code}: {resp.text[:200]}")
         body = resp.json()
@@ -137,6 +153,12 @@ def _segment(f: dict[str, Any]) -> CashSegment:
     )
 
 
+def _in_cabin(seg: CashSegment, cabin: str) -> bool:
+    if not seg.travel_class:
+        return True
+    return seg.travel_class.lower().startswith(CLASS_WORD[cabin])
+
+
 def normalize(body: dict[str, Any], origin: str, destination: str, day: str, cabin: str, currency: str) -> CashSearchResult:
     itineraries: list[CashItinerary] = []
     for key, best in (("best_flights", True), ("other_flights", False)):
@@ -144,6 +166,9 @@ def normalize(body: dict[str, Any], origin: str, destination: str, day: str, cab
             segs = [_segment(f) for f in it.get("flights") or []]
             if not segs:
                 continue
+            other = [f"{s.flight_number} {s.travel_class}" for s in segs if not _in_cabin(s, cabin)]
+            if len(other) == len(segs):
+                continue  # no flight is in the cabin of the search
             airlines: list[str] = []
             for s in segs:
                 if s.airline and s.airline not in airlines:
@@ -161,6 +186,7 @@ def normalize(body: dict[str, Any], origin: str, destination: str, day: str, cab
                     segments=segs,
                     best=best,
                     booking_token=it.get("booking_token") or it.get("departure_token"),
+                    other_cabin=other,
                 )
             )
     insights = body.get("price_insights") or {}

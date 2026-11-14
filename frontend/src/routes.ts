@@ -76,8 +76,8 @@ export function buildRoutes(
       cashLowest[cabin] = Math.min(cashLowest[cabin] ?? Infinity, it.price)
       const old = r.offers.find((o) => o.kind === 'cash' && o.cabin === cabin)
       const below = !!res.typical_range && it.price < res.typical_range[0]
-      if (!old) r.offers.push({ id: `${key}|cash|${cabin}`, cabin, kind: 'cash', usd: it.price, cpp: null, cashRef: null, reach: null, partner: false, belowTypical: below })
-      else if (it.price < old.usd) { old.usd = it.price; old.belowTypical = below }
+      if (!old) r.offers.push({ id: `${key}|cash|${cabin}`, cabin, kind: 'cash', usd: it.price, cpp: null, cashRef: null, reach: null, partner: false, belowTypical: below, otherCabin: it.other_cabin ?? [] })
+      else if (it.price < old.usd) { old.usd = it.price; old.belowTypical = below; old.otherCabin = it.other_cabin ?? [] }
     }
   }
 

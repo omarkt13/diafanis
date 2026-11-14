@@ -68,6 +68,9 @@ def test_pick_beyond_gives_nearby_large_airports():
     assert {"CDG", "FRA"} & set(b)
 
 
+from app.sources.serpapi_flights import call_counter  # noqa: E402
+
+
 class FakeSerp:
     def __init__(self):
         self.calls_made = 0
@@ -78,6 +81,7 @@ class FakeSerp:
 
     async def search(self, o, dests, day, cabin, currency, return_date=None):
         self.calls_made += 1
+        call_counter.get()[0] += 1  # as the real client does for each search sent
         self.seen.append((tuple(dests), return_date))
         if return_date:
             return res(it(2100, *SV))

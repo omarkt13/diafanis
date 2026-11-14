@@ -1,0 +1,5787 @@
+{
+ "best_flights": [
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 05:00"
+     },
+     "arrival_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 06:55"
+     },
+     "duration": 235,
+     "airplane": "Boeing 737MAX 8 Passenger",
+     "airline": "EgyptAir",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MS.png",
+     "travel_class": "Business Class",
+     "flight_number": "MS 911",
+     "extensions": [
+      "Extra reclining seat",
+      "Wi-Fi for a fee",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 272 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 09:50"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 13:05"
+     },
+     "duration": 255,
+     "airplane": "Airbus A320neo",
+     "airline": "EgyptAir",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MS.png",
+     "travel_class": "Business Class",
+     "flight_number": "MS 771",
+     "extensions": [
+      "Extra reclining seat",
+      "Wi-Fi for a fee",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 349 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 175,
+     "name": "Cairo International Airport",
+     "id": "CAI"
+    }
+   ],
+   "total_duration": 665,
+   "carbon_emissions": {
+    "this_flight": 622000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -47
+   },
+   "price": 1072,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MS.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3ROVXpreE1YeE5VemMzTVJvTENQM0VCaEFDR2dOVlUwUTRISEQ5eEFZPSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkNBSSIsbnVsbCwiTVMiLCI5MTEiXSxbIkNBSSIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIk1TIiwiNzcxIl1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 06:00"
+     },
+     "arrival_airport": {
+      "name": "King Abdulaziz International Airport",
+      "id": "JED",
+      "time": "2026-11-27 08:10"
+     },
+     "duration": 190,
+     "airplane": "Airbus A320",
+     "airline": "Saudia",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+     "travel_class": "Business Class",
+     "flight_number": "SV 591",
+     "extensions": [
+      "Extra reclining seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 272 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "King Abdulaziz International Airport",
+      "id": "JED",
+      "time": "2026-11-27 09:25"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 13:35"
+     },
+     "duration": 370,
+     "airplane": "Airbus A321",
+     "airline": "Saudia",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+     "travel_class": "Business Class",
+     "flight_number": "SV 237",
+     "extensions": [
+      "Individual suite",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 673 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 75,
+     "name": "King Abdulaziz International Airport",
+     "id": "JED"
+    }
+   ],
+   "total_duration": 635,
+   "carbon_emissions": {
+    "this_flight": 945000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -19
+   },
+   "price": 2358,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3RUVmpVNU1YeFRWakl6TnhvTENNaXhEaEFDR2dOVlUwUTRISERJc1E0PSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkpFRCIsbnVsbCwiU1YiLCI1OTEiXSxbIkpFRCIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIlNWIiwiMjM3Il1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 08:40"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 12:45"
+     },
+     "duration": 425,
+     "airplane": "Boeing 777",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 89",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1633 kg"
+     ]
+    }
+   ],
+   "total_duration": 425,
+   "carbon_emissions": {
+    "this_flight": 1634000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 39
+   },
+   "price": 4780,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ1JGU3pnNUdnc0krNVVkRUFJYUExVlRSRGdjY1B1VkhRPT0iLFtbIkRYQiIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIkVLIiwiODkiXV1d"
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 14:40"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 18:45"
+     },
+     "duration": 425,
+     "airplane": "Boeing 777",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 83",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1633 kg"
+     ]
+    }
+   ],
+   "total_duration": 425,
+   "carbon_emissions": {
+    "this_flight": 1634000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 39
+   },
+   "price": 4780,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ1JGU3pnekdnc0krNVVkRUFJYUExVlRSRGdjY1B1VkhRPT0iLFtbIkRYQiIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIkVLIiwiODMiXV1d"
+  }
+ ],
+ "other_flights": [
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 22:45"
+     },
+     "arrival_airport": {
+      "name": "Queen Alia International Airport",
+      "id": "AMM",
+      "time": "2026-11-28 01:20"
+     },
+     "duration": 215,
+     "airplane": "Airbus A320neo",
+     "airline": "Royal Jordanian",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/RJ.png",
+     "travel_class": "Business Class",
+     "flight_number": "RJ 615",
+     "extensions": [
+      "Extra reclining seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 246 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Queen Alia International Airport",
+      "id": "AMM",
+      "time": "2026-11-28 11:15"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 13:55"
+     },
+     "duration": 280,
+     "airplane": "Embraer 190 E2",
+     "airline": "Royal Jordanian",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/RJ.png",
+     "travel_class": "Business Class",
+     "flight_number": "RJ 155",
+     "extensions": [
+      "Standard recliner seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 448 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 595,
+     "name": "Queen Alia International Airport",
+     "id": "AMM"
+    }
+   ],
+   "total_duration": 1090,
+   "carbon_emissions": {
+    "this_flight": 695000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -41
+   },
+   "price": 1516,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/RJ.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3RTU2pZeE5YeFNTakUxTlJvTENOZWZDUkFDR2dOVlUwUTRISERYbndrPSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkFNTSIsbnVsbCwiUkoiLCI2MTUiXSxbIkFNTSIsIjIwMjYtMTEtMjgiLCJHVkEiLG51bGwsIlJKIiwiMTU1Il1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 03:10"
+     },
+     "arrival_airport": {
+      "name": "Beirut-Rafic Hariri International Airport",
+      "id": "BEY",
+      "time": "2026-11-27 04:35"
+     },
+     "duration": 205,
+     "airplane": "Airbus A320",
+     "airline": "MEA",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/ME.png",
+     "travel_class": "Business Class",
+     "flight_number": "ME 431",
+     "extensions": [
+      "Extra reclining seat",
+      "In-seat power outlet",
+      "On-demand video",
+      "Carbon emissions estimate: 394 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "Beirut-Rafic Hariri International Airport",
+      "id": "BEY",
+      "time": "2026-11-27 07:25"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 10:40"
+     },
+     "duration": 255,
+     "airplane": "Airbus A321neo",
+     "airline": "MEA",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/ME.png",
+     "travel_class": "Business Class",
+     "flight_number": "ME 213",
+     "extensions": [
+      "Extra reclining seat",
+      "Wi-Fi for a fee",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 360 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 170,
+     "name": "Beirut-Rafic Hariri International Airport",
+     "id": "BEY"
+    }
+   ],
+   "total_duration": 630,
+   "carbon_emissions": {
+    "this_flight": 756000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -36
+   },
+   "price": 1556,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/ME.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3ROUlRRek1YeE5SVEl4TXhvTENNdS9DUkFDR2dOVlUwUTRISERMdndrPSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkJFWSIsbnVsbCwiTUUiLCI0MzEiXSxbIkJFWSIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIk1FIiwiMjEzIl1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 22:25"
+     },
+     "arrival_airport": {
+      "name": "Beirut-Rafic Hariri International Airport",
+      "id": "BEY",
+      "time": "2026-11-27 23:50"
+     },
+     "duration": 205,
+     "airplane": "Airbus A321neo",
+     "airline": "MEA",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/ME.png",
+     "travel_class": "Business Class",
+     "flight_number": "ME 429",
+     "extensions": [
+      "Extra reclining seat",
+      "Wi-Fi for a fee",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 318 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Beirut-Rafic Hariri International Airport",
+      "id": "BEY",
+      "time": "2026-11-28 07:25"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 10:40"
+     },
+     "duration": 255,
+     "airplane": "Airbus A320",
+     "airline": "MEA",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/ME.png",
+     "travel_class": "Business Class",
+     "flight_number": "ME 213",
+     "extensions": [
+      "Extra reclining seat",
+      "In-seat power outlet",
+      "On-demand video",
+      "Carbon emissions estimate: 446 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 455,
+     "name": "Beirut-Rafic Hariri International Airport",
+     "id": "BEY"
+    }
+   ],
+   "total_duration": 915,
+   "carbon_emissions": {
+    "this_flight": 765000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -35
+   },
+   "price": 1556,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/ME.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3ROUlRReU9YeE5SVEl4TXhvTENNdS9DUkFDR2dOVlUwUTRISERMdndrPSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkJFWSIsbnVsbCwiTUUiLCI0MjkiXSxbIkJFWSIsIjIwMjYtMTEtMjgiLCJHVkEiLG51bGwsIk1FIiwiMjEzIl1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 20:00"
+     },
+     "arrival_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 21:55"
+     },
+     "duration": 235,
+     "airplane": "Boeing 737",
+     "airline": "EgyptAir",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MS.png",
+     "travel_class": "Business Class",
+     "flight_number": "MS 906",
+     "extensions": [
+      "Extra reclining seat",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 333 kg"
+     ],
+     "often_delayed_by_over_30_min": true
+    },
+    {
+     "departure_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-28 09:50"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 13:05"
+     },
+     "duration": 255,
+     "airplane": "Airbus A320neo",
+     "airline": "EgyptAir",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MS.png",
+     "travel_class": "Business Class",
+     "flight_number": "MS 771",
+     "extensions": [
+      "Extra reclining seat",
+      "Wi-Fi for a fee",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 349 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 715,
+     "name": "Cairo International Airport",
+     "id": "CAI"
+    }
+   ],
+   "total_duration": 1205,
+   "carbon_emissions": {
+    "this_flight": 683000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -42
+   },
+   "price": 1584,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MS.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3ROVXprd05ueE5VemMzTVJvTENPM1VDUkFDR2dOVlUwUTRISER0MUFrPSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkNBSSIsbnVsbCwiTVMiLCI5MDYiXSxbIkNBSSIsIjIwMjYtMTEtMjgiLCJHVkEiLG51bGwsIk1TIiwiNzcxIl1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 17:15"
+     },
+     "arrival_airport": {
+      "name": "Athens International Airport \"Eleftherios Venizelos\"",
+      "id": "ATH",
+      "time": "2026-11-27 21:10"
+     },
+     "duration": 355,
+     "airplane": "Airbus A320neo",
+     "airline": "Aegean",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/A3.png",
+     "travel_class": "Business Class",
+     "flight_number": "A3 959",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "Free Wi-Fi",
+      "In-seat USB outlet",
+      "Stream media to your device",
+      "Carbon emissions estimate: 357 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Athens International Airport \"Eleftherios Venizelos\"",
+      "id": "ATH",
+      "time": "2026-11-28 08:20"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 10:10"
+     },
+     "duration": 170,
+     "airplane": "Airbus A320neo",
+     "airline": "Aegean",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/A3.png",
+     "travel_class": "Business Class",
+     "flight_number": "A3 854",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "Free Wi-Fi",
+      "In-seat USB outlet",
+      "Stream media to your device",
+      "Carbon emissions estimate: 196 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 670,
+     "name": "Athens International Airport \"Eleftherios Venizelos\"",
+     "id": "ATH"
+    }
+   ],
+   "total_duration": 1195,
+   "carbon_emissions": {
+    "this_flight": 554000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -53
+   },
+   "price": 1723,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/A3.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3RCTXprMU9YeEJNemcxTkJvTENLdkJDaEFDR2dOVlUwUTRISENyd1FvPSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkFUSCIsbnVsbCwiQTMiLCI5NTkiXSxbIkFUSCIsIjIwMjYtMTEtMjgiLCJHVkEiLG51bGwsIkEzIiwiODU0Il1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 15:15"
+     },
+     "arrival_airport": {
+      "name": "Casablanca Mohammed V International Airport",
+      "id": "CMN",
+      "time": "2026-11-27 19:55"
+     },
+     "duration": 520,
+     "airplane": "Boeing 787",
+     "airline": "Royal Air Maroc",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AT.png",
+     "travel_class": "Business Class",
+     "flight_number": "AT 247",
+     "extensions": [
+      "Lie flat seat",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1482 kg"
+     ],
+     "often_delayed_by_over_30_min": true
+    },
+    {
+     "departure_airport": {
+      "name": "Casablanca Mohammed V International Airport",
+      "id": "CMN",
+      "time": "2026-11-28 11:50"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 15:50"
+     },
+     "duration": 180,
+     "airplane": "Boeing 737",
+     "airline": "Royal Air Maroc",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AT.png",
+     "travel_class": "Business Class",
+     "flight_number": "AT 930",
+     "extensions": [
+      "Standard recliner seat",
+      "In-seat power outlet",
+      "Carbon emissions estimate: 258 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 955,
+     "name": "Casablanca Mohammed V International Airport",
+     "id": "CMN"
+    }
+   ],
+   "total_duration": 1655,
+   "carbon_emissions": {
+    "this_flight": 1741000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 48
+   },
+   "price": 2018,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AT.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3RCVkRJME4zeEJWRGt6TUJvTENMU29EQkFDR2dOVlUwUTRISEMwcUF3PSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkNNTiIsbnVsbCwiQVQiLCIyNDciXSxbIkNNTiIsIjIwMjYtMTEtMjgiLCJHVkEiLG51bGwsIkFUIiwiOTMwIl1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 11:00"
+     },
+     "arrival_airport": {
+      "name": "Muscat International Airport",
+      "id": "MCT",
+      "time": "2026-11-27 12:10"
+     },
+     "duration": 70,
+     "airplane": "Boeing 737",
+     "airline": "Oman Air",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WY.png",
+     "travel_class": "Business Class",
+     "flight_number": "WY 604",
+     "extensions": [
+      "Extra reclining seat",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 79 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Muscat International Airport",
+      "id": "MCT",
+      "time": "2026-11-27 15:05"
+     },
+     "arrival_airport": {
+      "name": "Zurich Airport",
+      "id": "ZRH",
+      "time": "2026-11-27 19:05"
+     },
+     "duration": 420,
+     "airplane": "Boeing 787",
+     "airline": "Oman Air",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/WY.png",
+     "travel_class": "Business Class",
+     "flight_number": "WY 153",
+     "extensions": [
+      "Lie flat seat",
+      "Wi-Fi for a fee",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1208 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Zurich Airport",
+      "id": "ZRH",
+      "time": "2026-11-27 21:00"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 21:55"
+     },
+     "duration": 55,
+     "airplane": "Airbus A320neo",
+     "airline": "SWISS",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+     "travel_class": "Business Class",
+     "flight_number": "LX 2816",
+     "legroom": "32 in",
+     "extensions": [
+      "Average legroom (32 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 56 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 175,
+     "name": "Muscat International Airport",
+     "id": "MCT"
+    },
+    {
+     "duration": 115,
+     "name": "Zurich Airport",
+     "id": "ZRH"
+    }
+   ],
+   "total_duration": 835,
+   "carbon_emissions": {
+    "this_flight": 1344000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 15
+   },
+   "price": 2202,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaEpYV1RZd05IeFhXVEUxTTN4TVdESTRNVFlhQ3dpQXVBMFFBaG9EVlZORU9CeHdnTGdOIixbWyJEWEIiLCIyMDI2LTExLTI3IiwiTUNUIixudWxsLCJXWSIsIjYwNCJdLFsiTUNUIiwiMjAyNi0xMS0yNyIsIlpSSCIsbnVsbCwiV1kiLCIxNTMiXSxbIlpSSCIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIkxYIiwiMjgxNiJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 08:40"
+     },
+     "arrival_airport": {
+      "name": "Tunis-Carthage International Airport",
+      "id": "TUN",
+      "time": "2026-11-27 12:35"
+     },
+     "duration": 415,
+     "airplane": "Airbus A350",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 747",
+     "ticket_also_sold_by": [
+      "Tunisair"
+     ],
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1211 kg"
+     ],
+     "often_delayed_by_over_30_min": true
+    },
+    {
+     "departure_airport": {
+      "name": "Tunis-Carthage International Airport",
+      "id": "TUN",
+      "time": "2026-11-27 16:30"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 18:25"
+     },
+     "duration": 115,
+     "airplane": "Airbus A320",
+     "airline": "Tunisair",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TU.png",
+     "travel_class": "Business Class",
+     "flight_number": "TU 700",
+     "extensions": [
+      "Standard recliner seat",
+      "In-seat power & USB outlets",
+      "Carbon emissions estimate: 182 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 235,
+     "name": "Tunis-Carthage International Airport",
+     "id": "TUN"
+    }
+   ],
+   "total_duration": 765,
+   "carbon_emissions": {
+    "this_flight": 1394000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 19
+   },
+   "price": 2308,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3RGU3pjME4zeFVWVGN3TUJvTENOS0tEaEFDR2dOVlUwUTRISERTaWc0PSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIlRVTiIsbnVsbCwiRUsiLCI3NDciXSxbIlRVTiIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIlRVIiwiNzAwIl1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 04:05"
+     },
+     "arrival_airport": {
+      "name": "King Abdulaziz International Airport",
+      "id": "JED",
+      "time": "2026-11-27 06:15"
+     },
+     "duration": 190,
+     "airplane": "Airbus A321",
+     "airline": "Saudia",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+     "travel_class": "Business Class",
+     "flight_number": "SV 599",
+     "extensions": [
+      "Extra reclining seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 291 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "King Abdulaziz International Airport",
+      "id": "JED",
+      "time": "2026-11-27 09:25"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 13:35"
+     },
+     "duration": 370,
+     "airplane": "Airbus A321",
+     "airline": "Saudia",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+     "travel_class": "Business Class",
+     "flight_number": "SV 237",
+     "extensions": [
+      "Individual suite",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 673 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 190,
+     "name": "King Abdulaziz International Airport",
+     "id": "JED"
+    }
+   ],
+   "total_duration": 750,
+   "carbon_emissions": {
+    "this_flight": 965000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -18
+   },
+   "price": 2358,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3RUVmpVNU9YeFRWakl6TnhvTENNaXhEaEFDR2dOVlUwUTRISERJc1E0PSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkpFRCIsbnVsbCwiU1YiLCI1OTkiXSxbIkpFRCIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIlNWIiwiMjM3Il1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 23:00"
+     },
+     "arrival_airport": {
+      "name": "King Abdulaziz International Airport",
+      "id": "JED",
+      "time": "2026-11-28 01:10"
+     },
+     "duration": 190,
+     "airplane": "Airbus A321",
+     "airline": "Saudia",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+     "travel_class": "Business Class",
+     "flight_number": "SV 595",
+     "extensions": [
+      "Extra reclining seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 257 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "King Abdulaziz International Airport",
+      "id": "JED",
+      "time": "2026-11-28 09:25"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 13:35"
+     },
+     "duration": 370,
+     "airplane": "Airbus A321",
+     "airline": "Saudia",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+     "travel_class": "Business Class",
+     "flight_number": "SV 237",
+     "extensions": [
+      "Individual suite",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 673 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 495,
+     "name": "King Abdulaziz International Airport",
+     "id": "JED"
+    }
+   ],
+   "total_duration": 1055,
+   "carbon_emissions": {
+    "this_flight": 931000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -21
+   },
+   "price": 2358,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3RUVmpVNU5YeFRWakl6TnhvTENNaXhEaEFDR2dOVlUwUTRISERJc1E0PSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkpFRCIsbnVsbCwiU1YiLCI1OTUiXSxbIkpFRCIsIjIwMjYtMTEtMjgiLCJHVkEiLG51bGwsIlNWIiwiMjM3Il1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 04:05"
+     },
+     "arrival_airport": {
+      "name": "King Abdulaziz International Airport",
+      "id": "JED",
+      "time": "2026-11-27 06:15"
+     },
+     "duration": 190,
+     "airplane": "Airbus A321",
+     "airline": "Saudia",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+     "travel_class": "Business Class",
+     "flight_number": "SV 599",
+     "extensions": [
+      "Extra reclining seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 291 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "King Abdulaziz International Airport",
+      "id": "JED",
+      "time": "2026-11-28 09:25"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 13:35"
+     },
+     "duration": 370,
+     "airplane": "Airbus A321",
+     "airline": "Saudia",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+     "travel_class": "Business Class",
+     "flight_number": "SV 237",
+     "extensions": [
+      "Individual suite",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 673 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 1630,
+     "name": "King Abdulaziz International Airport",
+     "id": "JED"
+    }
+   ],
+   "total_duration": 2190,
+   "carbon_emissions": {
+    "this_flight": 965000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -18
+   },
+   "price": 2589,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZzFUVmpVNU9YeFRWakl6TnlNeEdnc0lydVlQRUFJYUExVlRSRGdjY0s3bUR3PT0iLFtbIkRYQiIsIjIwMjYtMTEtMjciLCJKRUQiLG51bGwsIlNWIiwiNTk5Il0sWyJKRUQiLCIyMDI2LTExLTI4IiwiR1ZBIixudWxsLCJTViIsIjIzNyJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 06:00"
+     },
+     "arrival_airport": {
+      "name": "King Abdulaziz International Airport",
+      "id": "JED",
+      "time": "2026-11-27 08:10"
+     },
+     "duration": 190,
+     "airplane": "Airbus A320",
+     "airline": "Saudia",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+     "travel_class": "Business Class",
+     "flight_number": "SV 591",
+     "extensions": [
+      "Extra reclining seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 272 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "King Abdulaziz International Airport",
+      "id": "JED",
+      "time": "2026-11-28 09:25"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 13:35"
+     },
+     "duration": 370,
+     "airplane": "Airbus A321",
+     "airline": "Saudia",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+     "travel_class": "Business Class",
+     "flight_number": "SV 237",
+     "extensions": [
+      "Individual suite",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 673 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 1515,
+     "name": "King Abdulaziz International Airport",
+     "id": "JED"
+    }
+   ],
+   "total_duration": 2075,
+   "carbon_emissions": {
+    "this_flight": 945000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -19
+   },
+   "price": 2589,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZzFUVmpVNU1YeFRWakl6TnlNeEdnc0lydVlQRUFJYUExVlRSRGdjY0s3bUR3PT0iLFtbIkRYQiIsIjIwMjYtMTEtMjciLCJKRUQiLG51bGwsIlNWIiwiNTkxIl0sWyJKRUQiLCIyMDI2LTExLTI4IiwiR1ZBIixudWxsLCJTViIsIjIzNyJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 05:00"
+     },
+     "arrival_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 06:55"
+     },
+     "duration": 235,
+     "airplane": "Boeing 737MAX 8 Passenger",
+     "airline": "EgyptAir",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MS.png",
+     "travel_class": "Business Class",
+     "flight_number": "MS 911",
+     "extensions": [
+      "Extra reclining seat",
+      "Wi-Fi for a fee",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 272 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 13:10"
+     },
+     "arrival_airport": {
+      "name": "Zurich Airport",
+      "id": "ZRH",
+      "time": "2026-11-27 16:30"
+     },
+     "duration": 260,
+     "airplane": "Airbus A320neo",
+     "airline": "SWISS",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+     "travel_class": "Business Class",
+     "flight_number": "LX 239",
+     "legroom": "32 in",
+     "extensions": [
+      "Average legroom (32 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 289 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Zurich Airport",
+      "id": "ZRH",
+      "time": "2026-11-27 21:00"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 21:55"
+     },
+     "duration": 55,
+     "airplane": "Airbus A320neo",
+     "airline": "SWISS",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+     "travel_class": "Business Class",
+     "flight_number": "LX 2816",
+     "legroom": "32 in",
+     "extensions": [
+      "Average legroom (32 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 56 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 375,
+     "name": "Cairo International Airport",
+     "id": "CAI"
+    },
+    {
+     "duration": 270,
+     "name": "Zurich Airport",
+     "id": "ZRH"
+    }
+   ],
+   "total_duration": 1195,
+   "carbon_emissions": {
+    "this_flight": 618000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -47
+   },
+   "price": 2702,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaEpOVXpreE1YeE1XREl6T1h4TVdESTRNVFlhQ3dqRXZoQVFBaG9EVlZORU9CeHd4TDRRIixbWyJEWEIiLCIyMDI2LTExLTI3IiwiQ0FJIixudWxsLCJNUyIsIjkxMSJdLFsiQ0FJIiwiMjAyNi0xMS0yNyIsIlpSSCIsbnVsbCwiTFgiLCIyMzkiXSxbIlpSSCIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIkxYIiwiMjgxNiJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 05:00"
+     },
+     "arrival_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 06:55"
+     },
+     "duration": 235,
+     "airplane": "Boeing 737MAX 8 Passenger",
+     "airline": "EgyptAir",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MS.png",
+     "travel_class": "Business Class",
+     "flight_number": "MS 911",
+     "extensions": [
+      "Extra reclining seat",
+      "Wi-Fi for a fee",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 272 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 13:10"
+     },
+     "arrival_airport": {
+      "name": "Zurich Airport",
+      "id": "ZRH",
+      "time": "2026-11-27 16:30"
+     },
+     "duration": 260,
+     "airplane": "Airbus A320neo",
+     "airline": "SWISS",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+     "travel_class": "Business Class",
+     "flight_number": "LX 239",
+     "legroom": "32 in",
+     "extensions": [
+      "Average legroom (32 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 289 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Zurich Airport",
+      "id": "ZRH",
+      "time": "2026-11-27 22:40"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 23:35"
+     },
+     "duration": 55,
+     "airplane": "Airbus A220-300 Passenger",
+     "airline": "SWISS",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+     "travel_class": "Business Class",
+     "flight_number": "LX 2818",
+     "legroom": "32 in",
+     "extensions": [
+      "Average legroom (32 in)",
+      "Carbon emissions estimate: 67 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 375,
+     "name": "Cairo International Airport",
+     "id": "CAI"
+    },
+    {
+     "duration": 370,
+     "name": "Zurich Airport",
+     "id": "ZRH"
+    }
+   ],
+   "total_duration": 1295,
+   "carbon_emissions": {
+    "this_flight": 630000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -46
+   },
+   "price": 2702,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaEpOVXpreE1YeE1XREl6T1h4TVdESTRNVGdhQ3dqRXZoQVFBaG9EVlZORU9CeHd4TDRRIixbWyJEWEIiLCIyMDI2LTExLTI3IiwiQ0FJIixudWxsLCJNUyIsIjkxMSJdLFsiQ0FJIiwiMjAyNi0xMS0yNyIsIlpSSCIsbnVsbCwiTFgiLCIyMzkiXSxbIlpSSCIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIkxYIiwiMjgxOCJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 20:55"
+     },
+     "arrival_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 23:10"
+     },
+     "duration": 255,
+     "airplane": "Airbus A380",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 925",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 758 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-28 05:35"
+     },
+     "arrival_airport": {
+      "name": "Munich International Airport",
+      "id": "MUC",
+      "time": "2026-11-28 08:40"
+     },
+     "duration": 245,
+     "airplane": "Airbus A321neo",
+     "airline": "Lufthansa",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+     "travel_class": "Business Class",
+     "flight_number": "LH 587",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 290 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Munich International Airport",
+      "id": "MUC",
+      "time": "2026-11-28 15:00"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 16:15"
+     },
+     "duration": 75,
+     "airplane": "Airbus A319",
+     "airline": "Lufthansa",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+     "travel_class": "Business Class",
+     "flight_number": "LH 2386",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "Wi-Fi for a fee",
+      "Carbon emissions estimate: 113 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 385,
+     "name": "Cairo International Airport",
+     "id": "CAI"
+    },
+    {
+     "duration": 380,
+     "name": "Munich International Airport",
+     "id": "MUC"
+    }
+   ],
+   "total_duration": 1340,
+   "carbon_emissions": {
+    "this_flight": 1163000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -1
+   },
+   "price": 2732,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaEpGU3preU5YeE1TRFU0TjN4TVNESXpPRFlhQ3dpYTFoQVFBaG9EVlZORU9CeHdtdFlRIixbWyJEWEIiLCIyMDI2LTExLTI3IiwiQ0FJIixudWxsLCJFSyIsIjkyNSJdLFsiQ0FJIiwiMjAyNi0xMS0yOCIsIk1VQyIsbnVsbCwiTEgiLCI1ODciXSxbIk1VQyIsIjIwMjYtMTEtMjgiLCJHVkEiLG51bGwsIkxIIiwiMjM4NiJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 04:10"
+     },
+     "arrival_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 06:25"
+     },
+     "duration": 255,
+     "airplane": "Boeing 777",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 929",
+     "extensions": [
+      "Angled flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 737 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 13:10"
+     },
+     "arrival_airport": {
+      "name": "Zurich Airport",
+      "id": "ZRH",
+      "time": "2026-11-27 16:30"
+     },
+     "duration": 260,
+     "airplane": "Airbus A320neo",
+     "airline": "SWISS",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+     "travel_class": "Business Class",
+     "flight_number": "LX 239",
+     "legroom": "32 in",
+     "extensions": [
+      "Average legroom (32 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 289 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Zurich Airport",
+      "id": "ZRH",
+      "time": "2026-11-27 21:00"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 21:55"
+     },
+     "duration": 55,
+     "airplane": "Airbus A320neo",
+     "airline": "SWISS",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+     "travel_class": "Business Class",
+     "flight_number": "LX 2816",
+     "legroom": "32 in",
+     "extensions": [
+      "Average legroom (32 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 56 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 405,
+     "name": "Cairo International Airport",
+     "id": "CAI"
+    },
+    {
+     "duration": 270,
+     "name": "Zurich Airport",
+     "id": "ZRH"
+    }
+   ],
+   "total_duration": 1245,
+   "carbon_emissions": {
+    "this_flight": 1083000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -8
+   },
+   "price": 2732,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaEpGU3preU9YeE1XREl6T1h4TVdESTRNVFlhQ3dpdTFoQVFBaG9EVlZORU9CeHdydFlRIixbWyJEWEIiLCIyMDI2LTExLTI3IiwiQ0FJIixudWxsLCJFSyIsIjkyOSJdLFsiQ0FJIiwiMjAyNi0xMS0yNyIsIlpSSCIsbnVsbCwiTFgiLCIyMzkiXSxbIlpSSCIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIkxYIiwiMjgxNiJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 04:10"
+     },
+     "arrival_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 06:25"
+     },
+     "duration": 255,
+     "airplane": "Boeing 777",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 929",
+     "extensions": [
+      "Angled flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 737 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 13:10"
+     },
+     "arrival_airport": {
+      "name": "Zurich Airport",
+      "id": "ZRH",
+      "time": "2026-11-27 16:30"
+     },
+     "duration": 260,
+     "airplane": "Airbus A320neo",
+     "airline": "SWISS",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+     "travel_class": "Business Class",
+     "flight_number": "LX 239",
+     "legroom": "32 in",
+     "extensions": [
+      "Average legroom (32 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 289 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Zurich Airport",
+      "id": "ZRH",
+      "time": "2026-11-27 22:40"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 23:35"
+     },
+     "duration": 55,
+     "airplane": "Airbus A220-300 Passenger",
+     "airline": "SWISS",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+     "travel_class": "Business Class",
+     "flight_number": "LX 2818",
+     "legroom": "32 in",
+     "extensions": [
+      "Average legroom (32 in)",
+      "Carbon emissions estimate: 67 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 405,
+     "name": "Cairo International Airport",
+     "id": "CAI"
+    },
+    {
+     "duration": 370,
+     "name": "Zurich Airport",
+     "id": "ZRH"
+    }
+   ],
+   "total_duration": 1345,
+   "carbon_emissions": {
+    "this_flight": 1094000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -7
+   },
+   "price": 2732,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaEpGU3preU9YeE1XREl6T1h4TVdESTRNVGdhQ3dpdTFoQVFBaG9EVlZORU9CeHdydFlRIixbWyJEWEIiLCIyMDI2LTExLTI3IiwiQ0FJIixudWxsLCJFSyIsIjkyOSJdLFsiQ0FJIiwiMjAyNi0xMS0yNyIsIlpSSCIsbnVsbCwiTFgiLCIyMzkiXSxbIlpSSCIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIkxYIiwiMjgxOCJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 08:10"
+     },
+     "arrival_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 10:25"
+     },
+     "duration": 255,
+     "airplane": "Airbus A380",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 927",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 758 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 13:10"
+     },
+     "arrival_airport": {
+      "name": "Zurich Airport",
+      "id": "ZRH",
+      "time": "2026-11-27 16:30"
+     },
+     "duration": 260,
+     "airplane": "Airbus A320neo",
+     "airline": "SWISS",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+     "travel_class": "Business Class",
+     "flight_number": "LX 239",
+     "legroom": "32 in",
+     "extensions": [
+      "Average legroom (32 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 289 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Zurich Airport",
+      "id": "ZRH",
+      "time": "2026-11-27 22:40"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 23:35"
+     },
+     "duration": 55,
+     "airplane": "Airbus A220-300 Passenger",
+     "airline": "SWISS",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+     "travel_class": "Business Class",
+     "flight_number": "LX 2818",
+     "legroom": "32 in",
+     "extensions": [
+      "Average legroom (32 in)",
+      "Carbon emissions estimate: 67 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 165,
+     "name": "Cairo International Airport",
+     "id": "CAI"
+    },
+    {
+     "duration": 370,
+     "name": "Zurich Airport",
+     "id": "ZRH"
+    }
+   ],
+   "total_duration": 1105,
+   "carbon_emissions": {
+    "this_flight": 1116000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -5
+   },
+   "price": 2732,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaEpGU3preU4zeE1XREl6T1h4TVdESTRNVGdhQ3dpdTFoQVFBaG9EVlZORU9CeHdydFlRIixbWyJEWEIiLCIyMDI2LTExLTI3IiwiQ0FJIixudWxsLCJFSyIsIjkyNyJdLFsiQ0FJIiwiMjAyNi0xMS0yNyIsIlpSSCIsbnVsbCwiTFgiLCIyMzkiXSxbIlpSSCIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIkxYIiwiMjgxOCJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 12:00"
+     },
+     "arrival_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 14:15"
+     },
+     "duration": 255,
+     "airplane": "Boeing 777",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 921",
+     "extensions": [
+      "Angled flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 725 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-28 01:55"
+     },
+     "arrival_airport": {
+      "name": "Frankfurt Airport",
+      "id": "FRA",
+      "time": "2026-11-28 05:30"
+     },
+     "duration": 275,
+     "airplane": "Airbus A321neo",
+     "airline": "Lufthansa",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+     "travel_class": "Business Class",
+     "flight_number": "LH 585",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 321 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "Frankfurt Airport",
+      "id": "FRA",
+      "time": "2026-11-28 06:55"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 08:05"
+     },
+     "duration": 70,
+     "airplane": "Airbus A320",
+     "airline": "Lufthansa",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+     "travel_class": "Business Class",
+     "flight_number": "LH 1212",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "Carbon emissions estimate: 94 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 700,
+     "name": "Cairo International Airport",
+     "id": "CAI"
+    },
+    {
+     "duration": 85,
+     "name": "Frankfurt Airport",
+     "id": "FRA"
+    }
+   ],
+   "total_duration": 1385,
+   "carbon_emissions": {
+    "this_flight": 1141000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -3
+   },
+   "price": 2743,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaEpGU3preU1YeE1TRFU0Tlh4TVNERXlNVElhQ3dqUzNoQVFBaG9EVlZORU9CeHcwdDRRIixbWyJEWEIiLCIyMDI2LTExLTI3IiwiQ0FJIixudWxsLCJFSyIsIjkyMSJdLFsiQ0FJIiwiMjAyNi0xMS0yOCIsIkZSQSIsbnVsbCwiTEgiLCI1ODUiXSxbIkZSQSIsIjIwMjYtMTEtMjgiLCJHVkEiLG51bGwsIkxIIiwiMTIxMiJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 12:00"
+     },
+     "arrival_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 14:15"
+     },
+     "duration": 255,
+     "airplane": "Boeing 777",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 921",
+     "extensions": [
+      "Angled flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 725 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-28 01:55"
+     },
+     "arrival_airport": {
+      "name": "Frankfurt Airport",
+      "id": "FRA",
+      "time": "2026-11-28 05:30"
+     },
+     "duration": 275,
+     "airplane": "Airbus A321neo",
+     "airline": "Lufthansa",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+     "travel_class": "Business Class",
+     "flight_number": "LH 585",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 321 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "Frankfurt Airport",
+      "id": "FRA",
+      "time": "2026-11-28 08:55"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 10:10"
+     },
+     "duration": 75,
+     "airplane": "Embraer 195",
+     "airline": "Air Dolomiti",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EN.png",
+     "travel_class": "Business Class",
+     "flight_number": "EN 1214",
+     "legroom": "31 in",
+     "extensions": [
+      "Average legroom (31 in)",
+      "Carbon emissions estimate: 109 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 700,
+     "name": "Cairo International Airport",
+     "id": "CAI"
+    },
+    {
+     "duration": 205,
+     "name": "Frankfurt Airport",
+     "id": "FRA"
+    }
+   ],
+   "total_duration": 1510,
+   "carbon_emissions": {
+    "this_flight": 1157000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -1
+   },
+   "price": 2743,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaEpGU3preU1YeE1TRFU0Tlh4RlRqRXlNVFFhQ3dqUzNoQVFBaG9EVlZORU9CeHcwdDRRIixbWyJEWEIiLCIyMDI2LTExLTI3IiwiQ0FJIixudWxsLCJFSyIsIjkyMSJdLFsiQ0FJIiwiMjAyNi0xMS0yOCIsIkZSQSIsbnVsbCwiTEgiLCI1ODUiXSxbIkZSQSIsIjIwMjYtMTEtMjgiLCJHVkEiLG51bGwsIkVOIiwiMTIxNCJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 15:00"
+     },
+     "arrival_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 17:15"
+     },
+     "duration": 255,
+     "airplane": "Airbus A380",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 923",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 758 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-28 01:55"
+     },
+     "arrival_airport": {
+      "name": "Frankfurt Airport",
+      "id": "FRA",
+      "time": "2026-11-28 05:30"
+     },
+     "duration": 275,
+     "airplane": "Airbus A321neo",
+     "airline": "Lufthansa",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+     "travel_class": "Business Class",
+     "flight_number": "LH 585",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 321 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "Frankfurt Airport",
+      "id": "FRA",
+      "time": "2026-11-28 06:55"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 08:05"
+     },
+     "duration": 70,
+     "airplane": "Airbus A320",
+     "airline": "Lufthansa",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+     "travel_class": "Business Class",
+     "flight_number": "LH 1212",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "Carbon emissions estimate: 94 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 520,
+     "name": "Cairo International Airport",
+     "id": "CAI"
+    },
+    {
+     "duration": 85,
+     "name": "Frankfurt Airport",
+     "id": "FRA"
+    }
+   ],
+   "total_duration": 1205,
+   "carbon_emissions": {
+    "this_flight": 1174000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 0
+   },
+   "price": 2743,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaEpGU3preU0zeE1TRFU0Tlh4TVNERXlNVElhQ3dqUzNoQVFBaG9EVlZORU9CeHcwdDRRIixbWyJEWEIiLCIyMDI2LTExLTI3IiwiQ0FJIixudWxsLCJFSyIsIjkyMyJdLFsiQ0FJIiwiMjAyNi0xMS0yOCIsIkZSQSIsbnVsbCwiTEgiLCI1ODUiXSxbIkZSQSIsIjIwMjYtMTEtMjgiLCJHVkEiLG51bGwsIkxIIiwiMTIxMiJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 15:00"
+     },
+     "arrival_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 17:15"
+     },
+     "duration": 255,
+     "airplane": "Airbus A380",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 923",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 758 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-28 01:55"
+     },
+     "arrival_airport": {
+      "name": "Frankfurt Airport",
+      "id": "FRA",
+      "time": "2026-11-28 05:30"
+     },
+     "duration": 275,
+     "airplane": "Airbus A321neo",
+     "airline": "Lufthansa",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+     "travel_class": "Business Class",
+     "flight_number": "LH 585",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 321 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "Frankfurt Airport",
+      "id": "FRA",
+      "time": "2026-11-28 08:55"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 10:10"
+     },
+     "duration": 75,
+     "airplane": "Embraer 195",
+     "airline": "Air Dolomiti",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EN.png",
+     "travel_class": "Business Class",
+     "flight_number": "EN 1214",
+     "legroom": "31 in",
+     "extensions": [
+      "Average legroom (31 in)",
+      "Carbon emissions estimate: 109 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 520,
+     "name": "Cairo International Airport",
+     "id": "CAI"
+    },
+    {
+     "duration": 205,
+     "name": "Frankfurt Airport",
+     "id": "FRA"
+    }
+   ],
+   "total_duration": 1330,
+   "carbon_emissions": {
+    "this_flight": 1190000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 1
+   },
+   "price": 2743,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaEpGU3preU0zeE1TRFU0Tlh4RlRqRXlNVFFhQ3dqUzNoQVFBaG9EVlZORU9CeHcwdDRRIixbWyJEWEIiLCIyMDI2LTExLTI3IiwiQ0FJIixudWxsLCJFSyIsIjkyMyJdLFsiQ0FJIiwiMjAyNi0xMS0yOCIsIkZSQSIsbnVsbCwiTEgiLCI1ODUiXSxbIkZSQSIsIjIwMjYtMTEtMjgiLCJHVkEiLG51bGwsIkVOIiwiMTIxNCJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 15:00"
+     },
+     "arrival_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 17:15"
+     },
+     "duration": 255,
+     "airplane": "Airbus A380",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 923",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 758 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-28 01:55"
+     },
+     "arrival_airport": {
+      "name": "Frankfurt Airport",
+      "id": "FRA",
+      "time": "2026-11-28 05:30"
+     },
+     "duration": 275,
+     "airplane": "Airbus A321neo",
+     "airline": "Lufthansa",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+     "travel_class": "Business Class",
+     "flight_number": "LH 585",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 321 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "Frankfurt Airport",
+      "id": "FRA",
+      "time": "2026-11-28 12:05"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 13:15"
+     },
+     "duration": 70,
+     "airplane": "Airbus A319",
+     "airline": "Lufthansa",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+     "travel_class": "Business Class",
+     "flight_number": "LH 1216",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "Wi-Fi for a fee",
+      "Carbon emissions estimate: 110 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 520,
+     "name": "Cairo International Airport",
+     "id": "CAI"
+    },
+    {
+     "duration": 395,
+     "name": "Frankfurt Airport",
+     "id": "FRA"
+    }
+   ],
+   "total_duration": 1515,
+   "carbon_emissions": {
+    "this_flight": 1190000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 1
+   },
+   "price": 2743,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaEpGU3preU0zeE1TRFU0Tlh4TVNERXlNVFlhQ3dqUzNoQVFBaG9EVlZORU9CeHcwdDRRIixbWyJEWEIiLCIyMDI2LTExLTI3IiwiQ0FJIixudWxsLCJFSyIsIjkyMyJdLFsiQ0FJIiwiMjAyNi0xMS0yOCIsIkZSQSIsbnVsbCwiTEgiLCI1ODUiXSxbIkZSQSIsIjIwMjYtMTEtMjgiLCJHVkEiLG51bGwsIkxIIiwiMTIxNiJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 20:55"
+     },
+     "arrival_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 23:10"
+     },
+     "duration": 255,
+     "airplane": "Airbus A380",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 925",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 758 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-28 01:55"
+     },
+     "arrival_airport": {
+      "name": "Frankfurt Airport",
+      "id": "FRA",
+      "time": "2026-11-28 05:30"
+     },
+     "duration": 275,
+     "airplane": "Airbus A321neo",
+     "airline": "Lufthansa",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+     "travel_class": "Business Class",
+     "flight_number": "LH 585",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 321 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "Frankfurt Airport",
+      "id": "FRA",
+      "time": "2026-11-28 06:55"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 08:05"
+     },
+     "duration": 70,
+     "airplane": "Airbus A320",
+     "airline": "Lufthansa",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+     "travel_class": "Business Class",
+     "flight_number": "LH 1212",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "Carbon emissions estimate: 94 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 165,
+     "name": "Cairo International Airport",
+     "id": "CAI"
+    },
+    {
+     "duration": 85,
+     "name": "Frankfurt Airport",
+     "id": "FRA"
+    }
+   ],
+   "total_duration": 850,
+   "carbon_emissions": {
+    "this_flight": 1174000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 0
+   },
+   "price": 2743,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaEpGU3preU5YeE1TRFU0Tlh4TVNERXlNVElhQ3dqUzNoQVFBaG9EVlZORU9CeHcwdDRRIixbWyJEWEIiLCIyMDI2LTExLTI3IiwiQ0FJIixudWxsLCJFSyIsIjkyNSJdLFsiQ0FJIiwiMjAyNi0xMS0yOCIsIkZSQSIsbnVsbCwiTEgiLCI1ODUiXSxbIkZSQSIsIjIwMjYtMTEtMjgiLCJHVkEiLG51bGwsIkxIIiwiMTIxMiJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 20:55"
+     },
+     "arrival_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 23:10"
+     },
+     "duration": 255,
+     "airplane": "Airbus A380",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 925",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 758 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-28 01:55"
+     },
+     "arrival_airport": {
+      "name": "Frankfurt Airport",
+      "id": "FRA",
+      "time": "2026-11-28 05:30"
+     },
+     "duration": 275,
+     "airplane": "Airbus A321neo",
+     "airline": "Lufthansa",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+     "travel_class": "Business Class",
+     "flight_number": "LH 585",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 321 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "Frankfurt Airport",
+      "id": "FRA",
+      "time": "2026-11-28 08:55"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 10:10"
+     },
+     "duration": 75,
+     "airplane": "Embraer 195",
+     "airline": "Air Dolomiti",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EN.png",
+     "travel_class": "Business Class",
+     "flight_number": "EN 1214",
+     "legroom": "31 in",
+     "extensions": [
+      "Average legroom (31 in)",
+      "Carbon emissions estimate: 109 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 165,
+     "name": "Cairo International Airport",
+     "id": "CAI"
+    },
+    {
+     "duration": 205,
+     "name": "Frankfurt Airport",
+     "id": "FRA"
+    }
+   ],
+   "total_duration": 975,
+   "carbon_emissions": {
+    "this_flight": 1190000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 1
+   },
+   "price": 2743,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaEpGU3preU5YeE1TRFU0Tlh4RlRqRXlNVFFhQ3dqUzNoQVFBaG9EVlZORU9CeHcwdDRRIixbWyJEWEIiLCIyMDI2LTExLTI3IiwiQ0FJIixudWxsLCJFSyIsIjkyNSJdLFsiQ0FJIiwiMjAyNi0xMS0yOCIsIkZSQSIsbnVsbCwiTEgiLCI1ODUiXSxbIkZSQSIsIjIwMjYtMTEtMjgiLCJHVkEiLG51bGwsIkVOIiwiMTIxNCJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 20:55"
+     },
+     "arrival_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 23:10"
+     },
+     "duration": 255,
+     "airplane": "Airbus A380",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 925",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 758 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-28 01:55"
+     },
+     "arrival_airport": {
+      "name": "Frankfurt Airport",
+      "id": "FRA",
+      "time": "2026-11-28 05:30"
+     },
+     "duration": 275,
+     "airplane": "Airbus A321neo",
+     "airline": "Lufthansa",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+     "travel_class": "Business Class",
+     "flight_number": "LH 585",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 321 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "Frankfurt Airport",
+      "id": "FRA",
+      "time": "2026-11-28 12:05"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 13:15"
+     },
+     "duration": 70,
+     "airplane": "Airbus A319",
+     "airline": "Lufthansa",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+     "travel_class": "Business Class",
+     "flight_number": "LH 1216",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "Wi-Fi for a fee",
+      "Carbon emissions estimate: 110 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 165,
+     "name": "Cairo International Airport",
+     "id": "CAI"
+    },
+    {
+     "duration": 395,
+     "name": "Frankfurt Airport",
+     "id": "FRA"
+    }
+   ],
+   "total_duration": 1160,
+   "carbon_emissions": {
+    "this_flight": 1190000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 1
+   },
+   "price": 2743,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaEpGU3preU5YeE1TRFU0Tlh4TVNERXlNVFlhQ3dqUzNoQVFBaG9EVlZORU9CeHcwdDRRIixbWyJEWEIiLCIyMDI2LTExLTI3IiwiQ0FJIixudWxsLCJFSyIsIjkyNSJdLFsiQ0FJIiwiMjAyNi0xMS0yOCIsIkZSQSIsbnVsbCwiTEgiLCI1ODUiXSxbIkZSQSIsIjIwMjYtMTEtMjgiLCJHVkEiLG51bGwsIkxIIiwiMTIxNiJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 20:55"
+     },
+     "arrival_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-27 23:10"
+     },
+     "duration": 255,
+     "airplane": "Airbus A380",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 925",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 758 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Cairo International Airport",
+      "id": "CAI",
+      "time": "2026-11-28 01:55"
+     },
+     "arrival_airport": {
+      "name": "Frankfurt Airport",
+      "id": "FRA",
+      "time": "2026-11-28 05:30"
+     },
+     "duration": 275,
+     "airplane": "Airbus A321neo",
+     "airline": "Lufthansa",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+     "travel_class": "Business Class",
+     "flight_number": "LH 585",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 321 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "Frankfurt Airport",
+      "id": "FRA",
+      "time": "2026-11-28 16:25"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 17:40"
+     },
+     "duration": 75,
+     "airplane": "Embraer 195",
+     "airline": "Lufthansa",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+     "travel_class": "Business Class",
+     "flight_number": "LH 1220",
+     "legroom": "31 in",
+     "extensions": [
+      "Average legroom (31 in)",
+      "Carbon emissions estimate: 112 kg"
+     ],
+     "plane_and_crew_by": "Air Dolomiti"
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 165,
+     "name": "Cairo International Airport",
+     "id": "CAI"
+    },
+    {
+     "duration": 655,
+     "name": "Frankfurt Airport",
+     "id": "FRA"
+    }
+   ],
+   "total_duration": 1425,
+   "carbon_emissions": {
+    "this_flight": 1192000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 2
+   },
+   "price": 2743,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaEpGU3preU5YeE1TRFU0Tlh4TVNERXlNakFhQ3dqUzNoQVFBaG9EVlZORU9CeHcwdDRRIixbWyJEWEIiLCIyMDI2LTExLTI3IiwiQ0FJIixudWxsLCJFSyIsIjkyNSJdLFsiQ0FJIiwiMjAyNi0xMS0yOCIsIkZSQSIsbnVsbCwiTEgiLCI1ODUiXSxbIkZSQSIsIjIwMjYtMTEtMjgiLCJHVkEiLG51bGwsIkxIIiwiMTIyMCJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 01:30"
+     },
+     "arrival_airport": {
+      "name": "A\u00e9roport de Paris-Charles de Gaulle",
+      "id": "CDG",
+      "time": "2026-11-27 06:25"
+     },
+     "duration": 475,
+     "airplane": "Boeing 777",
+     "airline": "Air France",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+     "travel_class": "Business Class",
+     "flight_number": "AF 655",
+     "extensions": [
+      "Lie flat seat",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1541 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "A\u00e9roport de Paris-Charles de Gaulle",
+      "id": "CDG",
+      "time": "2026-11-27 08:25"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 09:40"
+     },
+     "duration": 75,
+     "airplane": "Airbus A220-300 Passenger",
+     "airline": "Air France",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+     "travel_class": "Business Class",
+     "flight_number": "AF 1642",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 93 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 120,
+     "name": "A\u00e9roport de Paris-Charles de Gaulle",
+     "id": "CDG"
+    }
+   ],
+   "total_duration": 670,
+   "carbon_emissions": {
+    "this_flight": 1635000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 39
+   },
+   "price": 2820,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3hCUmpZMU5YeEJSakUyTkRJYUN3akNtaEVRQWhvRFZWTkVPQnh3d3BvUiIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkNERyIsbnVsbCwiQUYiLCI2NTUiXSxbIkNERyIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIkFGIiwiMTY0MiJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 01:30"
+     },
+     "arrival_airport": {
+      "name": "A\u00e9roport de Paris-Charles de Gaulle",
+      "id": "CDG",
+      "time": "2026-11-27 06:25"
+     },
+     "duration": 475,
+     "airplane": "Boeing 777",
+     "airline": "Air France",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+     "travel_class": "Business Class",
+     "flight_number": "AF 655",
+     "extensions": [
+      "Lie flat seat",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1541 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "A\u00e9roport de Paris-Charles de Gaulle",
+      "id": "CDG",
+      "time": "2026-11-27 09:55"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 11:10"
+     },
+     "duration": 75,
+     "airplane": "Airbus A220-300 Passenger",
+     "airline": "Air France",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+     "travel_class": "Business Class",
+     "flight_number": "AF 1842",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 93 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 210,
+     "name": "A\u00e9roport de Paris-Charles de Gaulle",
+     "id": "CDG"
+    }
+   ],
+   "total_duration": 760,
+   "carbon_emissions": {
+    "this_flight": 1635000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 39
+   },
+   "price": 2820,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3hCUmpZMU5YeEJSakU0TkRJYUN3akNtaEVRQWhvRFZWTkVPQnh3d3BvUiIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkNERyIsbnVsbCwiQUYiLCI2NTUiXSxbIkNERyIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIkFGIiwiMTg0MiJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 01:30"
+     },
+     "arrival_airport": {
+      "name": "A\u00e9roport de Paris-Charles de Gaulle",
+      "id": "CDG",
+      "time": "2026-11-27 06:25"
+     },
+     "duration": 475,
+     "airplane": "Boeing 777",
+     "airline": "Air France",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+     "travel_class": "Business Class",
+     "flight_number": "AF 655",
+     "extensions": [
+      "Lie flat seat",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1541 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "A\u00e9roport de Paris-Charles de Gaulle",
+      "id": "CDG",
+      "time": "2026-11-27 13:00"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 14:10"
+     },
+     "duration": 70,
+     "airplane": "Airbus A220-300 Passenger",
+     "airline": "Air France",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+     "travel_class": "Business Class",
+     "flight_number": "AF 1442",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 93 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 395,
+     "name": "A\u00e9roport de Paris-Charles de Gaulle",
+     "id": "CDG"
+    }
+   ],
+   "total_duration": 940,
+   "carbon_emissions": {
+    "this_flight": 1635000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 39
+   },
+   "price": 2820,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3hCUmpZMU5YeEJSakUwTkRJYUN3akNtaEVRQWhvRFZWTkVPQnh3d3BvUiIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkNERyIsbnVsbCwiQUYiLCI2NTUiXSxbIkNERyIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIkFGIiwiMTQ0MiJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 01:30"
+     },
+     "arrival_airport": {
+      "name": "A\u00e9roport de Paris-Charles de Gaulle",
+      "id": "CDG",
+      "time": "2026-11-27 06:25"
+     },
+     "duration": 475,
+     "airplane": "Boeing 777",
+     "airline": "Air France",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+     "travel_class": "Business Class",
+     "flight_number": "AF 655",
+     "extensions": [
+      "Lie flat seat",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1541 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "A\u00e9roport de Paris-Charles de Gaulle",
+      "id": "CDG",
+      "time": "2026-11-27 15:00"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 16:10"
+     },
+     "duration": 70,
+     "airplane": "Airbus A220-300 Passenger",
+     "airline": "Air France",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+     "travel_class": "Business Class",
+     "flight_number": "AF 1142",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 93 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 515,
+     "name": "A\u00e9roport de Paris-Charles de Gaulle",
+     "id": "CDG"
+    }
+   ],
+   "total_duration": 1060,
+   "carbon_emissions": {
+    "this_flight": 1635000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 39
+   },
+   "price": 2820,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3hCUmpZMU5YeEJSakV4TkRJYUN3akNtaEVRQWhvRFZWTkVPQnh3d3BvUiIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkNERyIsbnVsbCwiQUYiLCI2NTUiXSxbIkNERyIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIkFGIiwiMTE0MiJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 01:30"
+     },
+     "arrival_airport": {
+      "name": "A\u00e9roport de Paris-Charles de Gaulle",
+      "id": "CDG",
+      "time": "2026-11-27 06:25"
+     },
+     "duration": 475,
+     "airplane": "Boeing 777",
+     "airline": "Air France",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+     "travel_class": "Business Class",
+     "flight_number": "AF 655",
+     "extensions": [
+      "Lie flat seat",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1541 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "A\u00e9roport de Paris-Charles de Gaulle",
+      "id": "CDG",
+      "time": "2026-11-27 16:10"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 17:20"
+     },
+     "duration": 70,
+     "airplane": "Airbus A220-300 Passenger",
+     "airline": "Air France",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+     "travel_class": "Business Class",
+     "flight_number": "AF 1342",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 93 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 585,
+     "name": "A\u00e9roport de Paris-Charles de Gaulle",
+     "id": "CDG"
+    }
+   ],
+   "total_duration": 1130,
+   "carbon_emissions": {
+    "this_flight": 1635000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 39
+   },
+   "price": 2820,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3hCUmpZMU5YeEJSakV6TkRJYUN3akNtaEVRQWhvRFZWTkVPQnh3d3BvUiIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkNERyIsbnVsbCwiQUYiLCI2NTUiXSxbIkNERyIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIkFGIiwiMTM0MiJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 01:30"
+     },
+     "arrival_airport": {
+      "name": "A\u00e9roport de Paris-Charles de Gaulle",
+      "id": "CDG",
+      "time": "2026-11-27 06:30"
+     },
+     "duration": 480,
+     "airplane": "Boeing 777",
+     "airline": "Air France",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+     "travel_class": "Business Class",
+     "flight_number": "AF 655",
+     "ticket_also_sold_by": [
+      "KLM"
+     ],
+     "extensions": [
+      "Lie flat seat",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1541 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "A\u00e9roport de Paris-Charles de Gaulle",
+      "id": "CDG",
+      "time": "2026-11-27 08:00"
+     },
+     "arrival_airport": {
+      "name": "Amsterdam Airport Schiphol",
+      "id": "AMS",
+      "time": "2026-11-27 09:25"
+     },
+     "duration": 85,
+     "airplane": "Airbus A220-300 Passenger",
+     "airline": "Air France",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+     "travel_class": "Business Class",
+     "flight_number": "AF 1340",
+     "ticket_also_sold_by": [
+      "KLM"
+     ],
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 89 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Amsterdam Airport Schiphol",
+      "id": "AMS",
+      "time": "2026-11-27 12:20"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 13:50"
+     },
+     "duration": 90,
+     "airplane": "Embraer 195 E2",
+     "airline": "KLM",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+     "travel_class": "Business Class",
+     "flight_number": "KL 1933",
+     "legroom": "33 in",
+     "extensions": [
+      "Average legroom (33 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 113 kg"
+     ],
+     "plane_and_crew_by": "KLM Cityhopper"
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 90,
+     "name": "A\u00e9roport de Paris-Charles de Gaulle",
+     "id": "CDG"
+    },
+    {
+     "duration": 175,
+     "name": "Amsterdam Airport Schiphol",
+     "id": "AMS"
+    }
+   ],
+   "total_duration": 920,
+   "carbon_emissions": {
+    "this_flight": 1744000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 49
+   },
+   "price": 2850,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaE5CUmpZMU5YeEJSakV6TkRCOFMwd3hPVE16R2dzSTliRVJFQUlhQTFWVFJEZ2NjUFd4RVE9PSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkNERyIsbnVsbCwiQUYiLCI2NTUiXSxbIkNERyIsIjIwMjYtMTEtMjciLCJBTVMiLG51bGwsIkFGIiwiMTM0MCJdLFsiQU1TIiwiMjAyNi0xMS0yNyIsIkdWQSIsbnVsbCwiS0wiLCIxOTMzIl1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 01:30"
+     },
+     "arrival_airport": {
+      "name": "A\u00e9roport de Paris-Charles de Gaulle",
+      "id": "CDG",
+      "time": "2026-11-27 06:30"
+     },
+     "duration": 480,
+     "airplane": "Boeing 777",
+     "airline": "Air France",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+     "travel_class": "Business Class",
+     "flight_number": "AF 655",
+     "ticket_also_sold_by": [
+      "KLM"
+     ],
+     "extensions": [
+      "Lie flat seat",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1541 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "A\u00e9roport de Paris-Charles de Gaulle",
+      "id": "CDG",
+      "time": "2026-11-27 09:05"
+     },
+     "arrival_airport": {
+      "name": "Amsterdam Airport Schiphol",
+      "id": "AMS",
+      "time": "2026-11-27 10:30"
+     },
+     "duration": 85,
+     "airplane": "Boeing 737",
+     "airline": "KLM",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+     "travel_class": "Business Class",
+     "flight_number": "KL 1402",
+     "legroom": "33 in",
+     "extensions": [
+      "Average legroom (33 in)",
+      "In-seat power outlet",
+      "Carbon emissions estimate: 76 kg"
+     ],
+     "often_delayed_by_over_30_min": true
+    },
+    {
+     "departure_airport": {
+      "name": "Amsterdam Airport Schiphol",
+      "id": "AMS",
+      "time": "2026-11-27 12:20"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 13:50"
+     },
+     "duration": 90,
+     "airplane": "Embraer 195 E2",
+     "airline": "KLM",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+     "travel_class": "Business Class",
+     "flight_number": "KL 1933",
+     "legroom": "33 in",
+     "extensions": [
+      "Average legroom (33 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 113 kg"
+     ],
+     "plane_and_crew_by": "KLM Cityhopper"
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 155,
+     "name": "A\u00e9roport de Paris-Charles de Gaulle",
+     "id": "CDG"
+    },
+    {
+     "duration": 110,
+     "name": "Amsterdam Airport Schiphol",
+     "id": "AMS"
+    }
+   ],
+   "total_duration": 920,
+   "carbon_emissions": {
+    "this_flight": 1731000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 48
+   },
+   "price": 2852,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaE5CUmpZMU5YeExUREUwTURKOFMwd3hPVE16R2dzSWhiUVJFQUlhQTFWVFJEZ2NjSVcwRVE9PSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkNERyIsbnVsbCwiQUYiLCI2NTUiXSxbIkNERyIsIjIwMjYtMTEtMjciLCJBTVMiLG51bGwsIktMIiwiMTQwMiJdLFsiQU1TIiwiMjAyNi0xMS0yNyIsIkdWQSIsbnVsbCwiS0wiLCIxOTMzIl1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 01:30"
+     },
+     "arrival_airport": {
+      "name": "A\u00e9roport de Paris-Charles de Gaulle",
+      "id": "CDG",
+      "time": "2026-11-27 06:30"
+     },
+     "duration": 480,
+     "airplane": "Boeing 777",
+     "airline": "Air France",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+     "travel_class": "Business Class",
+     "flight_number": "AF 655",
+     "ticket_also_sold_by": [
+      "KLM"
+     ],
+     "extensions": [
+      "Lie flat seat",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1541 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "A\u00e9roport de Paris-Charles de Gaulle",
+      "id": "CDG",
+      "time": "2026-11-27 09:45"
+     },
+     "arrival_airport": {
+      "name": "Amsterdam Airport Schiphol",
+      "id": "AMS",
+      "time": "2026-11-27 11:10"
+     },
+     "duration": 85,
+     "airplane": "Boeing 737",
+     "airline": "KLM",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+     "travel_class": "Business Class",
+     "flight_number": "KL 1404",
+     "legroom": "33 in",
+     "extensions": [
+      "Average legroom (33 in)",
+      "In-seat power outlet",
+      "Carbon emissions estimate: 76 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Amsterdam Airport Schiphol",
+      "id": "AMS",
+      "time": "2026-11-27 12:20"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 13:50"
+     },
+     "duration": 90,
+     "airplane": "Embraer 195 E2",
+     "airline": "KLM",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+     "travel_class": "Business Class",
+     "flight_number": "KL 1933",
+     "legroom": "33 in",
+     "extensions": [
+      "Average legroom (33 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 113 kg"
+     ],
+     "plane_and_crew_by": "KLM Cityhopper"
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 195,
+     "name": "A\u00e9roport de Paris-Charles de Gaulle",
+     "id": "CDG"
+    },
+    {
+     "duration": 70,
+     "name": "Amsterdam Airport Schiphol",
+     "id": "AMS"
+    }
+   ],
+   "total_duration": 920,
+   "carbon_emissions": {
+    "this_flight": 1731000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 48
+   },
+   "price": 2852,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaE5CUmpZMU5YeExUREUwTURSOFMwd3hPVE16R2dzSWhiUVJFQUlhQTFWVFJEZ2NjSVcwRVE9PSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkNERyIsbnVsbCwiQUYiLCI2NTUiXSxbIkNERyIsIjIwMjYtMTEtMjciLCJBTVMiLG51bGwsIktMIiwiMTQwNCJdLFsiQU1TIiwiMjAyNi0xMS0yNyIsIkdWQSIsbnVsbCwiS0wiLCIxOTMzIl1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 01:30"
+     },
+     "arrival_airport": {
+      "name": "A\u00e9roport de Paris-Charles de Gaulle",
+      "id": "CDG",
+      "time": "2026-11-27 06:30"
+     },
+     "duration": 480,
+     "airplane": "Boeing 777",
+     "airline": "Air France",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+     "travel_class": "Business Class",
+     "flight_number": "AF 655",
+     "ticket_also_sold_by": [
+      "KLM"
+     ],
+     "extensions": [
+      "Lie flat seat",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1541 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "A\u00e9roport de Paris-Charles de Gaulle",
+      "id": "CDG",
+      "time": "2026-11-27 09:05"
+     },
+     "arrival_airport": {
+      "name": "Amsterdam Airport Schiphol",
+      "id": "AMS",
+      "time": "2026-11-27 10:30"
+     },
+     "duration": 85,
+     "airplane": "Boeing 737",
+     "airline": "KLM",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+     "travel_class": "Business Class",
+     "flight_number": "KL 1402",
+     "legroom": "33 in",
+     "extensions": [
+      "Average legroom (33 in)",
+      "In-seat power outlet",
+      "Carbon emissions estimate: 76 kg"
+     ],
+     "often_delayed_by_over_30_min": true
+    },
+    {
+     "departure_airport": {
+      "name": "Amsterdam Airport Schiphol",
+      "id": "AMS",
+      "time": "2026-11-27 15:10"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 16:40"
+     },
+     "duration": 90,
+     "airplane": "Embraer 195 E2",
+     "airline": "KLM",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+     "travel_class": "Business Class",
+     "flight_number": "KL 1935",
+     "legroom": "33 in",
+     "extensions": [
+      "Average legroom (33 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 113 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 155,
+     "name": "A\u00e9roport de Paris-Charles de Gaulle",
+     "id": "CDG"
+    },
+    {
+     "duration": 280,
+     "name": "Amsterdam Airport Schiphol",
+     "id": "AMS"
+    }
+   ],
+   "total_duration": 1090,
+   "carbon_emissions": {
+    "this_flight": 1731000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 48
+   },
+   "price": 2852,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaE5CUmpZMU5YeExUREUwTURKOFMwd3hPVE0xR2dzSWhiUVJFQUlhQTFWVFJEZ2NjSVcwRVE9PSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkNERyIsbnVsbCwiQUYiLCI2NTUiXSxbIkNERyIsIjIwMjYtMTEtMjciLCJBTVMiLG51bGwsIktMIiwiMTQwMiJdLFsiQU1TIiwiMjAyNi0xMS0yNyIsIkdWQSIsbnVsbCwiS0wiLCIxOTM1Il1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 01:30"
+     },
+     "arrival_airport": {
+      "name": "A\u00e9roport de Paris-Charles de Gaulle",
+      "id": "CDG",
+      "time": "2026-11-27 06:30"
+     },
+     "duration": 480,
+     "airplane": "Boeing 777",
+     "airline": "Air France",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
+     "travel_class": "Business Class",
+     "flight_number": "AF 655",
+     "ticket_also_sold_by": [
+      "KLM"
+     ],
+     "extensions": [
+      "Lie flat seat",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1541 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "A\u00e9roport de Paris-Charles de Gaulle",
+      "id": "CDG",
+      "time": "2026-11-27 09:45"
+     },
+     "arrival_airport": {
+      "name": "Amsterdam Airport Schiphol",
+      "id": "AMS",
+      "time": "2026-11-27 11:10"
+     },
+     "duration": 85,
+     "airplane": "Boeing 737",
+     "airline": "KLM",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+     "travel_class": "Business Class",
+     "flight_number": "KL 1404",
+     "legroom": "33 in",
+     "extensions": [
+      "Average legroom (33 in)",
+      "In-seat power outlet",
+      "Carbon emissions estimate: 76 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Amsterdam Airport Schiphol",
+      "id": "AMS",
+      "time": "2026-11-27 15:10"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 16:40"
+     },
+     "duration": 90,
+     "airplane": "Embraer 195 E2",
+     "airline": "KLM",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+     "travel_class": "Business Class",
+     "flight_number": "KL 1935",
+     "legroom": "33 in",
+     "extensions": [
+      "Average legroom (33 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 113 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 195,
+     "name": "A\u00e9roport de Paris-Charles de Gaulle",
+     "id": "CDG"
+    },
+    {
+     "duration": 240,
+     "name": "Amsterdam Airport Schiphol",
+     "id": "AMS"
+    }
+   ],
+   "total_duration": 1090,
+   "carbon_emissions": {
+    "this_flight": 1731000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 48
+   },
+   "price": 2852,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaE5CUmpZMU5YeExUREUwTURSOFMwd3hPVE0xR2dzSWhiUVJFQUlhQTFWVFJEZ2NjSVcwRVE9PSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkNERyIsbnVsbCwiQUYiLCI2NTUiXSxbIkNERyIsIjIwMjYtMTEtMjciLCJBTVMiLG51bGwsIktMIiwiMTQwNCJdLFsiQU1TIiwiMjAyNi0xMS0yNyIsIkdWQSIsbnVsbCwiS0wiLCIxOTM1Il1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 02:50"
+     },
+     "arrival_airport": {
+      "name": "Istanbul Airport",
+      "id": "IST",
+      "time": "2026-11-27 06:55"
+     },
+     "duration": 305,
+     "airplane": "Airbus A330",
+     "airline": "Turkish Airlines",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+     "travel_class": "Business Class",
+     "flight_number": "TK 761",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 878 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "Istanbul Airport",
+      "id": "IST",
+      "time": "2026-11-27 12:25"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 13:40"
+     },
+     "duration": 195,
+     "airplane": "Airbus A321neo",
+     "airline": "Turkish Airlines",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+     "travel_class": "Business Class",
+     "flight_number": "TK 1921",
+     "extensions": [
+      "Extra reclining seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 234 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 330,
+     "name": "Istanbul Airport",
+     "id": "IST"
+    }
+   ],
+   "total_duration": 830,
+   "carbon_emissions": {
+    "this_flight": 1114000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -5
+   },
+   "price": 2893,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3hVU3pjMk1YeFVTekU1TWpFYUN3ajUweEVRQWhvRFZWTkVPQnh3K2RNUiIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIklTVCIsbnVsbCwiVEsiLCI3NjEiXSxbIklTVCIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIlRLIiwiMTkyMSJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 02:50"
+     },
+     "arrival_airport": {
+      "name": "Istanbul Airport",
+      "id": "IST",
+      "time": "2026-11-27 06:55"
+     },
+     "duration": 305,
+     "airplane": "Airbus A330",
+     "airline": "Turkish Airlines",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+     "travel_class": "Business Class",
+     "flight_number": "TK 761",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 878 kg"
+     ],
+     "overnight": true
+    },
+    {
+     "departure_airport": {
+      "name": "Istanbul Airport",
+      "id": "IST",
+      "time": "2026-11-27 15:50"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 17:10"
+     },
+     "duration": 200,
+     "airplane": "Airbus A321neo",
+     "airline": "Turkish Airlines",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+     "travel_class": "Business Class",
+     "flight_number": "TK 1919",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 234 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 535,
+     "name": "Istanbul Airport",
+     "id": "IST"
+    }
+   ],
+   "total_duration": 1040,
+   "carbon_emissions": {
+    "this_flight": 1114000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -5
+   },
+   "price": 2893,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3hVU3pjMk1YeFVTekU1TVRrYUN3ajUweEVRQWhvRFZWTkVPQnh3K2RNUiIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIklTVCIsbnVsbCwiVEsiLCI3NjEiXSxbIklTVCIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIlRLIiwiMTkxOSJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 17:10"
+     },
+     "arrival_airport": {
+      "name": "Bole Addis Ababa International Airport",
+      "id": "ADD",
+      "time": "2026-11-27 20:20"
+     },
+     "duration": 250,
+     "airplane": "Boeing 777",
+     "airline": "Ethiopian",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/ET.png",
+     "travel_class": "Business Class",
+     "flight_number": "ET 603",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 957 kg"
+     ],
+     "often_delayed_by_over_30_min": true
+    },
+    {
+     "departure_airport": {
+      "name": "Bole Addis Ababa International Airport",
+      "id": "ADD",
+      "time": "2026-11-28 00:45"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 06:15"
+     },
+     "duration": 450,
+     "airplane": "Boeing 787",
+     "airline": "Ethiopian",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/ET.png",
+     "travel_class": "Business Class",
+     "flight_number": "ET 738",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1288 kg"
+     ],
+     "overnight": true
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 265,
+     "name": "Bole Addis Ababa International Airport",
+     "id": "ADD"
+    }
+   ],
+   "total_duration": 965,
+   "carbon_emissions": {
+    "this_flight": 2246000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 91
+   },
+   "price": 2940,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/ET.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3RGVkRZd00zeEZWRGN6T0JvTENJMzRFUkFDR2dOVlUwUTRISENOK0JFPSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkFERCIsbnVsbCwiRVQiLCI2MDMiXSxbIkFERCIsIjIwMjYtMTEtMjgiLCJHVkEiLG51bGwsIkVUIiwiNzM4Il1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 14:15"
+     },
+     "arrival_airport": {
+      "name": "King Abdulaziz International Airport",
+      "id": "JED",
+      "time": "2026-11-27 16:25"
+     },
+     "duration": 190,
+     "airplane": "Airbus A321",
+     "airline": "Saudia",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+     "travel_class": "Business Class",
+     "flight_number": "SV 569",
+     "extensions": [
+      "Extra reclining seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 257 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "King Abdulaziz International Airport",
+      "id": "JED",
+      "time": "2026-11-28 09:25"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 13:35"
+     },
+     "duration": 370,
+     "airplane": "Airbus A321",
+     "airline": "Saudia",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+     "travel_class": "Business Class",
+     "flight_number": "SV 237",
+     "extensions": [
+      "Individual suite",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 673 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 1020,
+     "name": "King Abdulaziz International Airport",
+     "id": "JED"
+    }
+   ],
+   "total_duration": 1580,
+   "carbon_emissions": {
+    "this_flight": 931000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -21
+   },
+   "price": 4413,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3RUVmpVMk9YeFRWakl6TnhvTENMcjNHaEFDR2dOVlUwUTRISEM2OXhvPSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkpFRCIsbnVsbCwiU1YiLCI1NjkiXSxbIkpFRCIsIjIwMjYtMTEtMjgiLCJHVkEiLG51bGwsIlNWIiwiMjM3Il1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 14:15"
+     },
+     "arrival_airport": {
+      "name": "King Abdulaziz International Airport",
+      "id": "JED",
+      "time": "2026-11-27 16:25"
+     },
+     "duration": 190,
+     "airplane": "Airbus A321",
+     "airline": "Saudia",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+     "travel_class": "Business Class",
+     "flight_number": "SV 569",
+     "extensions": [
+      "Extra reclining seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 257 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "King Abdulaziz International Airport",
+      "id": "JED",
+      "time": "2026-11-29 09:25"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-29 13:35"
+     },
+     "duration": 370,
+     "airplane": "Airbus A321",
+     "airline": "Saudia",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+     "travel_class": "Business Class",
+     "flight_number": "SV 237",
+     "extensions": [
+      "Individual suite",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 673 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 2460,
+     "name": "King Abdulaziz International Airport",
+     "id": "JED"
+    }
+   ],
+   "total_duration": 3020,
+   "carbon_emissions": {
+    "this_flight": 931000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -21
+   },
+   "price": 4566,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZzFUVmpVMk9YeFRWakl6TnlNeEdnc0l5ZTRiRUFJYUExVlRSRGdjY01udUd3PT0iLFtbIkRYQiIsIjIwMjYtMTEtMjciLCJKRUQiLG51bGwsIlNWIiwiNTY5Il0sWyJKRUQiLCIyMDI2LTExLTI5IiwiR1ZBIixudWxsLCJTViIsIjIzNyJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 23:00"
+     },
+     "arrival_airport": {
+      "name": "King Abdulaziz International Airport",
+      "id": "JED",
+      "time": "2026-11-28 01:10"
+     },
+     "duration": 190,
+     "airplane": "Airbus A321",
+     "airline": "Saudia",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+     "travel_class": "Business Class",
+     "flight_number": "SV 595",
+     "extensions": [
+      "Extra reclining seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 257 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "King Abdulaziz International Airport",
+      "id": "JED",
+      "time": "2026-11-29 09:25"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-29 13:35"
+     },
+     "duration": 370,
+     "airplane": "Airbus A321",
+     "airline": "Saudia",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+     "travel_class": "Business Class",
+     "flight_number": "SV 237",
+     "extensions": [
+      "Individual suite",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 673 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 1935,
+     "name": "King Abdulaziz International Airport",
+     "id": "JED"
+    }
+   ],
+   "total_duration": 2495,
+   "carbon_emissions": {
+    "this_flight": 931000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -21
+   },
+   "price": 4566,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZzFUVmpVNU5YeFRWakl6TnlNeEdnc0l5ZTRiRUFJYUExVlRSRGdjY01udUd3PT0iLFtbIkRYQiIsIjIwMjYtMTEtMjciLCJKRUQiLG51bGwsIlNWIiwiNTk1Il0sWyJKRUQiLCIyMDI2LTExLTI5IiwiR1ZBIixudWxsLCJTViIsIjIzNyJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 08:35"
+     },
+     "arrival_airport": {
+      "name": "Istanbul Airport",
+      "id": "IST",
+      "time": "2026-11-27 12:45"
+     },
+     "duration": 310,
+     "airplane": "Boeing 787",
+     "airline": "Turkish Airlines",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+     "travel_class": "Business Class",
+     "flight_number": "TK 763",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 781 kg"
+     ],
+     "often_delayed_by_over_30_min": true
+    },
+    {
+     "departure_airport": {
+      "name": "Istanbul Airport",
+      "id": "IST",
+      "time": "2026-11-27 15:50"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 17:10"
+     },
+     "duration": 200,
+     "airplane": "Airbus A321neo",
+     "airline": "Turkish Airlines",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+     "travel_class": "Business Class",
+     "flight_number": "TK 1919",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 234 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 185,
+     "name": "Istanbul Airport",
+     "id": "IST"
+    }
+   ],
+   "total_duration": 695,
+   "carbon_emissions": {
+    "this_flight": 1017000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -13
+   },
+   "price": 5063,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3hVU3pjMk0zeFVTekU1TVRrYUN3aVc4eDRRQWhvRFZWTkVPQnh3bHZNZSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIklTVCIsbnVsbCwiVEsiLCI3NjMiXSxbIklTVCIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIlRLIiwiMTkxOSJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 09:30"
+     },
+     "arrival_airport": {
+      "name": "Istanbul Airport",
+      "id": "IST",
+      "time": "2026-11-27 13:40"
+     },
+     "duration": 310,
+     "airplane": "Airbus A321neo",
+     "airline": "Turkish Airlines",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+     "travel_class": "Business Class",
+     "flight_number": "TK 759",
+     "extensions": [
+      "Extra reclining seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 360 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Istanbul Airport",
+      "id": "IST",
+      "time": "2026-11-27 15:50"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 17:10"
+     },
+     "duration": 200,
+     "airplane": "Airbus A321neo",
+     "airline": "Turkish Airlines",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+     "travel_class": "Business Class",
+     "flight_number": "TK 1919",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 234 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 130,
+     "name": "Istanbul Airport",
+     "id": "IST"
+    }
+   ],
+   "total_duration": 640,
+   "carbon_emissions": {
+    "this_flight": 596000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -49
+   },
+   "price": 5063,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TK.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3hVU3pjMU9YeFVTekU1TVRrYUN3aVc4eDRRQWhvRFZWTkVPQnh3bHZNZSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIklTVCIsbnVsbCwiVEsiLCI3NTkiXSxbIklTVCIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIlRLIiwiMTkxOSJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 11:10"
+     },
+     "arrival_airport": {
+      "name": "King Abdulaziz International Airport",
+      "id": "JED",
+      "time": "2026-11-27 13:20"
+     },
+     "duration": 190,
+     "airplane": "Airbus A321",
+     "airline": "Saudia",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+     "travel_class": "Business Class",
+     "flight_number": "SV 567",
+     "extensions": [
+      "Extra reclining seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 257 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "King Abdulaziz International Airport",
+      "id": "JED",
+      "time": "2026-11-29 09:25"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-29 13:35"
+     },
+     "duration": 370,
+     "airplane": "Airbus A321",
+     "airline": "Saudia",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+     "travel_class": "Business Class",
+     "flight_number": "SV 237",
+     "extensions": [
+      "Individual suite",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 673 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 2645,
+     "name": "King Abdulaziz International Airport",
+     "id": "JED"
+    }
+   ],
+   "total_duration": 3205,
+   "carbon_emissions": {
+    "this_flight": 931000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": -21
+   },
+   "price": 5543,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SV.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3RUVmpVMk4zeFRWakl6TnhvTENKWHFJUkFDR2dOVlUwUTRISENWNmlFPSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkpFRCIsbnVsbCwiU1YiLCI1NjciXSxbIkpFRCIsIjIwMjYtMTEtMjkiLCJHVkEiLG51bGwsIlNWIiwiMjM3Il1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 10:00"
+     },
+     "arrival_airport": {
+      "name": "Heathrow Airport",
+      "id": "LHR",
+      "time": "2026-11-27 14:55"
+     },
+     "duration": 535,
+     "airplane": "Boeing 787-10",
+     "airline": "British Airways",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BA.png",
+     "travel_class": "Business Class",
+     "flight_number": "BA 104",
+     "extensions": [
+      "Individual suite",
+      "Wi-Fi for a fee",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1161 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Heathrow Airport",
+      "id": "LHR",
+      "time": "2026-11-27 19:10"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 21:55"
+     },
+     "duration": 105,
+     "airplane": "Airbus A319",
+     "airline": "British Airways",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BA.png",
+     "travel_class": "Business Class",
+     "flight_number": "BA 750",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "In-seat power & USB outlets",
+      "Carbon emissions estimate: 143 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 255,
+     "name": "Heathrow Airport",
+     "id": "LHR"
+    }
+   ],
+   "total_duration": 895,
+   "carbon_emissions": {
+    "this_flight": 1305000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 11
+   },
+   "price": 7358,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BA.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3RDUVRFd05IeENRVGMxTUJvTENKLzBMQkFDR2dOVlUwUTRISENmOUN3PSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkxIUiIsbnVsbCwiQkEiLCIxMDQiXSxbIkxIUiIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIkJBIiwiNzUwIl1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 08:30"
+     },
+     "arrival_airport": {
+      "name": "Copenhagen Airport",
+      "id": "CPH",
+      "time": "2026-11-27 12:30"
+     },
+     "duration": 420,
+     "airplane": "Airbus A380",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 151",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1451 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Copenhagen Airport",
+      "id": "CPH",
+      "time": "2026-11-27 17:25"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 19:25"
+     },
+     "duration": 120,
+     "airplane": "Airbus A319",
+     "airline": "Scandinavian Airlines",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SK.png",
+     "travel_class": "Business Class",
+     "flight_number": "SK 617",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "Free Wi-Fi",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 195 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 295,
+     "name": "Copenhagen Airport",
+     "id": "CPH"
+    }
+   ],
+   "total_duration": 835,
+   "carbon_emissions": {
+    "this_flight": 1647000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 40
+   },
+   "price": 10577,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3RGU3pFMU1YeFRTell4TnhvTENQM0dRQkFDR2dOVlUwUTRISEQ5eGtBPSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkNQSCIsbnVsbCwiRUsiLCIxNTEiXSxbIkNQSCIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIlNLIiwiNjE3Il1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 08:55"
+     },
+     "arrival_airport": {
+      "name": "Leonardo da Vinci International Airport",
+      "id": "FCO",
+      "time": "2026-11-27 12:40"
+     },
+     "duration": 405,
+     "airplane": "Airbus A380",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 97",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1359 kg"
+     ],
+     "often_delayed_by_over_30_min": true
+    },
+    {
+     "departure_airport": {
+      "name": "Leonardo da Vinci International Airport",
+      "id": "FCO",
+      "time": "2026-11-27 16:30"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 18:05"
+     },
+     "duration": 95,
+     "airplane": "Airbus A220-300 Passenger",
+     "airline": "ITA",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+     "travel_class": "Business Class",
+     "flight_number": "AZ 578",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "Wi-Fi for a fee",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 123 kg"
+     ],
+     "often_delayed_by_over_30_min": true
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 230,
+     "name": "Leonardo da Vinci International Airport",
+     "id": "FCO"
+    }
+   ],
+   "total_duration": 730,
+   "carbon_emissions": {
+    "this_flight": 1483000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 26
+   },
+   "price": 10578,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3BGU3prM2ZFRmFOVGM0R2dzSXVjZEFFQUlhQTFWVFJEZ2NjTG5IUUE9PSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkZDTyIsbnVsbCwiRUsiLCI5NyJdLFsiRkNPIiwiMjAyNi0xMS0yNyIsIkdWQSIsbnVsbCwiQVoiLCI1NzgiXV1d"
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 15:10"
+     },
+     "arrival_airport": {
+      "name": "Leonardo da Vinci International Airport",
+      "id": "FCO",
+      "time": "2026-11-27 18:50"
+     },
+     "duration": 400,
+     "airplane": "Boeing 777",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 95",
+     "extensions": [
+      "Angled flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1363 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Leonardo da Vinci International Airport",
+      "id": "FCO",
+      "time": "2026-11-28 09:25"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 11:05"
+     },
+     "duration": 100,
+     "airplane": "Airbus A320",
+     "airline": "ITA",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+     "travel_class": "Business Class",
+     "flight_number": "AZ 576",
+     "legroom": "32 in",
+     "extensions": [
+      "Average legroom (32 in)",
+      "Carbon emissions estimate: 152 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 875,
+     "name": "Leonardo da Vinci International Airport",
+     "id": "FCO"
+    }
+   ],
+   "total_duration": 1375,
+   "carbon_emissions": {
+    "this_flight": 1516000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 29
+   },
+   "price": 10578,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3BGU3prMWZFRmFOVGMyR2dzSXVjZEFFQUlhQTFWVFJEZ2NjTG5IUUE9PSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkZDTyIsbnVsbCwiRUsiLCI5NSJdLFsiRkNPIiwiMjAyNi0xMS0yOCIsIkdWQSIsbnVsbCwiQVoiLCI1NzYiXV1d"
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 08:00"
+     },
+     "arrival_airport": {
+      "name": "Warsaw Chopin Airport",
+      "id": "WAW",
+      "time": "2026-11-27 11:20"
+     },
+     "duration": 380,
+     "airplane": "Boeing 777",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 179",
+     "extensions": [
+      "Angled flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1315 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Warsaw Chopin Airport",
+      "id": "WAW",
+      "time": "2026-11-27 16:40"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 19:00"
+     },
+     "duration": 140,
+     "airplane": "Embraer 175",
+     "airline": "LOT",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
+     "travel_class": "Business Class",
+     "flight_number": "LO 415",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "Carbon emissions estimate: 232 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 320,
+     "name": "Warsaw Chopin Airport",
+     "id": "WAW"
+    }
+   ],
+   "total_duration": 840,
+   "carbon_emissions": {
+    "this_flight": 1548000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 32
+   },
+   "price": 10580,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3RGU3pFM09YeE1UelF4TlJvTENKN0pRQkFDR2dOVlUwUTRISENleVVBPSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIldBVyIsbnVsbCwiRUsiLCIxNzkiXSxbIldBVyIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIkxPIiwiNDE1Il1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 08:55"
+     },
+     "arrival_airport": {
+      "name": "Vienna International Airport",
+      "id": "VIE",
+      "time": "2026-11-27 12:25"
+     },
+     "duration": 390,
+     "airplane": "Boeing 777",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 127",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1348 kg"
+     ],
+     "often_delayed_by_over_30_min": true
+    },
+    {
+     "departure_airport": {
+      "name": "Vienna International Airport",
+      "id": "VIE",
+      "time": "2026-11-27 15:20"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 16:55"
+     },
+     "duration": 95,
+     "airplane": "Airbus A320",
+     "airline": "Austrian",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OS.png",
+     "travel_class": "Business Class",
+     "flight_number": "OS 153",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 136 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 175,
+     "name": "Vienna International Airport",
+     "id": "VIE"
+    }
+   ],
+   "total_duration": 660,
+   "carbon_emissions": {
+    "this_flight": 1485000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 27
+   },
+   "price": 10584,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3RGU3pFeU4zeFBVekUxTXhvTENJVE1RQkFDR2dOVlUwUTRISENFekVBPSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIlZJRSIsbnVsbCwiRUsiLCIxMjciXSxbIlZJRSIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIk9TIiwiMTUzIl1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 08:55"
+     },
+     "arrival_airport": {
+      "name": "Vienna International Airport",
+      "id": "VIE",
+      "time": "2026-11-27 12:25"
+     },
+     "duration": 390,
+     "airplane": "Boeing 777",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 127",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1348 kg"
+     ],
+     "often_delayed_by_over_30_min": true
+    },
+    {
+     "departure_airport": {
+      "name": "Vienna International Airport",
+      "id": "VIE",
+      "time": "2026-11-27 17:35"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 19:10"
+     },
+     "duration": 95,
+     "airplane": "Embraer 195",
+     "airline": "Austrian",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OS.png",
+     "travel_class": "Business Class",
+     "flight_number": "OS 155",
+     "legroom": "29 in",
+     "extensions": [
+      "Average legroom (29 in)",
+      "Carbon emissions estimate: 165 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 310,
+     "name": "Vienna International Airport",
+     "id": "VIE"
+    }
+   ],
+   "total_duration": 795,
+   "carbon_emissions": {
+    "this_flight": 1514000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 29
+   },
+   "price": 10584,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3RGU3pFeU4zeFBVekUxTlJvTENJVE1RQkFDR2dOVlUwUTRISENFekVBPSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIlZJRSIsbnVsbCwiRUsiLCIxMjciXSxbIlZJRSIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIk9TIiwiMTU1Il1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 08:55"
+     },
+     "arrival_airport": {
+      "name": "Vienna International Airport",
+      "id": "VIE",
+      "time": "2026-11-27 12:25"
+     },
+     "duration": 390,
+     "airplane": "Boeing 777",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 127",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1348 kg"
+     ],
+     "often_delayed_by_over_30_min": true
+    },
+    {
+     "departure_airport": {
+      "name": "Vienna International Airport",
+      "id": "VIE",
+      "time": "2026-11-28 07:15"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 08:50"
+     },
+     "duration": 95,
+     "airplane": "Airbus A320",
+     "airline": "Austrian",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OS.png",
+     "travel_class": "Business Class",
+     "flight_number": "OS 151",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 136 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 1130,
+     "name": "Vienna International Airport",
+     "id": "VIE"
+    }
+   ],
+   "total_duration": 1615,
+   "carbon_emissions": {
+    "this_flight": 1485000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 27
+   },
+   "price": 10584,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3RGU3pFeU4zeFBVekUxTVJvTENLTE1RQkFDR2dOVlUwUTRISENpekVBPSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIlZJRSIsbnVsbCwiRUsiLCIxMjciXSxbIlZJRSIsIjIwMjYtMTEtMjgiLCJHVkEiLG51bGwsIk9TIiwiMTUxIl1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 08:30"
+     },
+     "arrival_airport": {
+      "name": "Copenhagen Airport",
+      "id": "CPH",
+      "time": "2026-11-27 12:30"
+     },
+     "duration": 420,
+     "airplane": "Airbus A380",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 151",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1451 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Copenhagen Airport",
+      "id": "CPH",
+      "time": "2026-11-28 08:10"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 10:15"
+     },
+     "duration": 125,
+     "airplane": "Airbus A320neo",
+     "airline": "Scandinavian Airlines",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SK.png",
+     "travel_class": "Business Class",
+     "flight_number": "SK 613",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 152 kg"
+     ],
+     "plane_and_crew_by": "Sas Connect"
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 1180,
+     "name": "Copenhagen Airport",
+     "id": "CPH"
+    }
+   ],
+   "total_duration": 1725,
+   "carbon_emissions": {
+    "this_flight": 1604000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 37
+   },
+   "price": 10598,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3RGU3pFMU1YeFRTell4TXhvTENLVFhRQkFDR2dOVlUwUTRISENrMTBBPSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkNQSCIsbnVsbCwiRUsiLCIxNTEiXSxbIkNQSCIsIjIwMjYtMTEtMjgiLCJHVkEiLG51bGwsIlNLIiwiNjEzIl1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 08:55"
+     },
+     "arrival_airport": {
+      "name": "Leonardo da Vinci International Airport",
+      "id": "FCO",
+      "time": "2026-11-27 12:40"
+     },
+     "duration": 405,
+     "airplane": "Airbus A380",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 97",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1359 kg"
+     ],
+     "often_delayed_by_over_30_min": true
+    },
+    {
+     "departure_airport": {
+      "name": "Leonardo da Vinci International Airport",
+      "id": "FCO",
+      "time": "2026-11-28 09:25"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 11:05"
+     },
+     "duration": 100,
+     "airplane": "Airbus A320",
+     "airline": "ITA",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AZ.png",
+     "travel_class": "Business Class",
+     "flight_number": "AZ 576",
+     "legroom": "32 in",
+     "extensions": [
+      "Average legroom (32 in)",
+      "Carbon emissions estimate: 152 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 1245,
+     "name": "Leonardo da Vinci International Airport",
+     "id": "FCO"
+    }
+   ],
+   "total_duration": 1750,
+   "carbon_emissions": {
+    "this_flight": 1512000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 29
+   },
+   "price": 10599,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3BGU3prM2ZFRmFOVGMyR2dzSTROZEFFQUlhQTFWVFJEZ2NjT0RYUUE9PSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkZDTyIsbnVsbCwiRUsiLCI5NyJdLFsiRkNPIiwiMjAyNi0xMS0yOCIsIkdWQSIsbnVsbCwiQVoiLCI1NzYiXV1d"
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 08:00"
+     },
+     "arrival_airport": {
+      "name": "Warsaw Chopin Airport",
+      "id": "WAW",
+      "time": "2026-11-27 11:20"
+     },
+     "duration": 380,
+     "airplane": "Boeing 777",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 179",
+     "extensions": [
+      "Angled flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1315 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Warsaw Chopin Airport",
+      "id": "WAW",
+      "time": "2026-11-28 07:20"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-28 09:40"
+     },
+     "duration": 140,
+     "airplane": "Embraer 195 E2",
+     "airline": "LOT",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
+     "travel_class": "Business Class",
+     "flight_number": "LO 417",
+     "legroom": "31 in",
+     "extensions": [
+      "Average legroom (31 in)",
+      "In-seat power outlet",
+      "Carbon emissions estimate: 190 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 1200,
+     "name": "Warsaw Chopin Airport",
+     "id": "WAW"
+    }
+   ],
+   "total_duration": 1720,
+   "carbon_emissions": {
+    "this_flight": 1506000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 28
+   },
+   "price": 10601,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3RGU3pFM09YeE1UelF4TnhvTENNWFpRQkFDR2dOVlUwUTRISERGMlVBPSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIldBVyIsbnVsbCwiRUsiLCIxNzkiXSxbIldBVyIsIjIwMjYtMTEtMjgiLCJHVkEiLG51bGwsIkxPIiwiNDE3Il1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 08:00"
+     },
+     "arrival_airport": {
+      "name": "Warsaw Chopin Airport",
+      "id": "WAW",
+      "time": "2026-11-27 11:20"
+     },
+     "duration": 380,
+     "airplane": "Boeing 777",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 179",
+     "extensions": [
+      "Angled flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1315 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Warsaw Chopin Airport",
+      "id": "WAW",
+      "time": "2026-11-27 15:00"
+     },
+     "arrival_airport": {
+      "name": "Copenhagen Airport",
+      "id": "CPH",
+      "time": "2026-11-27 16:25"
+     },
+     "duration": 85,
+     "airplane": "Embraer 195",
+     "airline": "Scandinavian Airlines",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SK.png",
+     "travel_class": "Business Class",
+     "flight_number": "SK 2762",
+     "legroom": "31 in",
+     "extensions": [
+      "Average legroom (31 in)",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 141 kg"
+     ],
+     "plane_and_crew_by": "Sas Link"
+    },
+    {
+     "departure_airport": {
+      "name": "Copenhagen Airport",
+      "id": "CPH",
+      "time": "2026-11-27 17:25"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 19:25"
+     },
+     "duration": 120,
+     "airplane": "Airbus A319",
+     "airline": "Scandinavian Airlines",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SK.png",
+     "travel_class": "Business Class",
+     "flight_number": "SK 617",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "Free Wi-Fi",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 195 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 220,
+     "name": "Warsaw Chopin Airport",
+     "id": "WAW"
+    },
+    {
+     "duration": 60,
+     "name": "Copenhagen Airport",
+     "id": "CPH"
+    }
+   ],
+   "total_duration": 865,
+   "carbon_emissions": {
+    "this_flight": 1652000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 41
+   },
+   "price": 10619,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaEpGU3pFM09YeFRTekkzTmpKOFUwczJNVGNhQ3dqbzUwQVFBaG9EVlZORU9CeHc2T2RBIixbWyJEWEIiLCIyMDI2LTExLTI3IiwiV0FXIixudWxsLCJFSyIsIjE3OSJdLFsiV0FXIiwiMjAyNi0xMS0yNyIsIkNQSCIsbnVsbCwiU0siLCIyNzYyIl0sWyJDUEgiLCIyMDI2LTExLTI3IiwiR1ZBIixudWxsLCJTSyIsIjYxNyJdXV0="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 07:45"
+     },
+     "arrival_airport": {
+      "name": "Heathrow Airport",
+      "id": "LHR",
+      "time": "2026-11-27 11:40"
+     },
+     "duration": 475,
+     "airplane": "Airbus A380",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 1",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1546 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Heathrow Airport",
+      "id": "LHR",
+      "time": "2026-11-27 19:30"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 22:10"
+     },
+     "duration": 100,
+     "airplane": "Airbus A220-300 Passenger",
+     "airline": "SWISS",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+     "travel_class": "Business Class",
+     "flight_number": "LX 357",
+     "legroom": "32 in",
+     "extensions": [
+      "Average legroom (32 in)",
+      "Carbon emissions estimate: 139 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 470,
+     "name": "Heathrow Airport",
+     "id": "LHR"
+    }
+   ],
+   "total_duration": 1045,
+   "carbon_emissions": {
+    "this_flight": 1687000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 44
+   },
+   "price": 11109,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ2xGU3pGOFRGZ3pOVGNhQ3dpODVrTVFBaG9EVlZORU9CeHd2T1pEIixbWyJEWEIiLCIyMDI2LTExLTI3IiwiTEhSIixudWxsLCJFSyIsIjEiXSxbIkxIUiIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIkxYIiwiMzU3Il1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 09:40"
+     },
+     "arrival_airport": {
+      "name": "Heathrow Airport",
+      "id": "LHR",
+      "time": "2026-11-27 13:50"
+     },
+     "duration": 490,
+     "airplane": "Airbus A380",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 29",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1537 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Heathrow Airport",
+      "id": "LHR",
+      "time": "2026-11-27 19:30"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 22:10"
+     },
+     "duration": 100,
+     "airplane": "Airbus A220-300 Passenger",
+     "airline": "SWISS",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+     "travel_class": "Business Class",
+     "flight_number": "LX 357",
+     "legroom": "32 in",
+     "extensions": [
+      "Average legroom (32 in)",
+      "Carbon emissions estimate: 139 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 340,
+     "name": "Heathrow Airport",
+     "id": "LHR"
+    }
+   ],
+   "total_duration": 930,
+   "carbon_emissions": {
+    "this_flight": 1677000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 43
+   },
+   "price": 11109,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3BGU3pJNWZFeFlNelUzR2dzSXZPWkRFQUlhQTFWVFJEZ2NjTHptUXc9PSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkxIUiIsbnVsbCwiRUsiLCIyOSJdLFsiTEhSIiwiMjAyNi0xMS0yNyIsIkdWQSIsbnVsbCwiTFgiLCIzNTciXV1d"
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 12:10"
+     },
+     "arrival_airport": {
+      "name": "Heathrow Airport",
+      "id": "LHR",
+      "time": "2026-11-27 16:10"
+     },
+     "duration": 480,
+     "airplane": "Airbus A380",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 31",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1533 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Heathrow Airport",
+      "id": "LHR",
+      "time": "2026-11-27 19:30"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 22:10"
+     },
+     "duration": 100,
+     "airplane": "Airbus A220-300 Passenger",
+     "airline": "SWISS",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+     "travel_class": "Business Class",
+     "flight_number": "LX 357",
+     "legroom": "32 in",
+     "extensions": [
+      "Average legroom (32 in)",
+      "Carbon emissions estimate: 139 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 200,
+     "name": "Heathrow Airport",
+     "id": "LHR"
+    }
+   ],
+   "total_duration": 780,
+   "carbon_emissions": {
+    "this_flight": 1673000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 43
+   },
+   "price": 11109,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3BGU3pNeGZFeFlNelUzR2dzSXZPWkRFQUlhQTFWVFJEZ2NjTHptUXc9PSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIkxIUiIsbnVsbCwiRUsiLCIzMSJdLFsiTEhSIiwiMjAyNi0xMS0yNyIsIkdWQSIsbnVsbCwiTFgiLCIzNTciXV1d"
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 08:15"
+     },
+     "arrival_airport": {
+      "name": "London Stansted Airport",
+      "id": "STN",
+      "time": "2026-11-27 12:05"
+     },
+     "duration": 470,
+     "airplane": "Boeing 777",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 65",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1604 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Heathrow Airport",
+      "id": "LHR",
+      "time": "2026-11-27 19:30"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 22:10"
+     },
+     "duration": 100,
+     "airplane": "Airbus A220-300 Passenger",
+     "airline": "SWISS",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+     "travel_class": "Business Class",
+     "flight_number": "LX 357",
+     "legroom": "32 in",
+     "extensions": [
+      "Average legroom (32 in)",
+      "Carbon emissions estimate: 139 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 445,
+     "name": "Heathrow Airport",
+     "id": "STN"
+    }
+   ],
+   "total_duration": 1015,
+   "carbon_emissions": {
+    "this_flight": 1745000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 49
+   },
+   "price": 11120,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3BGU3pZMWZFeFlNelUzR2dzSXF1OURFQUlhQTFWVFJEZ2NjS3J2UXc9PSIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIlNUTiIsbnVsbCwiRUsiLCI2NSJdLFsiTEhSIiwiMjAyNi0xMS0yNyIsIkdWQSIsbnVsbCwiTFgiLCIzNTciXV1d"
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 07:45"
+     },
+     "arrival_airport": {
+      "name": "Heathrow Airport",
+      "id": "LHR",
+      "time": "2026-11-27 11:40"
+     },
+     "duration": 475,
+     "airplane": "Airbus A380",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 1",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1546 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Heathrow Airport",
+      "id": "LHR",
+      "time": "2026-11-27 14:25"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 17:05"
+     },
+     "duration": 100,
+     "airplane": "Airbus A220-300 Passenger",
+     "airline": "SWISS",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+     "travel_class": "Business Class",
+     "flight_number": "LX 355",
+     "legroom": "32 in",
+     "extensions": [
+      "Average legroom (32 in)",
+      "Carbon emissions estimate: 139 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 165,
+     "name": "Heathrow Airport",
+     "id": "LHR"
+    }
+   ],
+   "total_duration": 740,
+   "carbon_emissions": {
+    "this_flight": 1687000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 44
+   },
+   "price": 11122,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ2xGU3pGOFRGZ3pOVFVhQ3dpSThVTVFBaG9EVlZORU9CeHdpUEZEIixbWyJEWEIiLCIyMDI2LTExLTI3IiwiTEhSIixudWxsLCJFSyIsIjEiXSxbIkxIUiIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIkxYIiwiMzU1Il1dXQ=="
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 08:50"
+     },
+     "arrival_airport": {
+      "name": "Hamburg Airport",
+      "id": "HAM",
+      "time": "2026-11-27 12:55"
+     },
+     "duration": 425,
+     "airplane": "Boeing 777",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 59",
+     "extensions": [
+      "Angled flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1506 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Hamburg Airport",
+      "id": "HAM",
+      "time": "2026-11-27 15:25"
+     },
+     "arrival_airport": {
+      "name": "Copenhagen Airport",
+      "id": "CPH",
+      "time": "2026-11-27 16:15"
+     },
+     "duration": 50,
+     "airplane": "Canadair RJ 900",
+     "airline": "Scandinavian Airlines",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SK.png",
+     "travel_class": "Business Class",
+     "flight_number": "SK 650",
+     "legroom": "31 in",
+     "extensions": [
+      "Average legroom (31 in)",
+      "Carbon emissions estimate: 95 kg"
+     ],
+     "plane_and_crew_by": "Cityjet"
+    },
+    {
+     "departure_airport": {
+      "name": "Copenhagen Airport",
+      "id": "CPH",
+      "time": "2026-11-27 17:25"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 19:25"
+     },
+     "duration": 120,
+     "airplane": "Airbus A319",
+     "airline": "Scandinavian Airlines",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SK.png",
+     "travel_class": "Business Class",
+     "flight_number": "SK 617",
+     "legroom": "30 in",
+     "extensions": [
+      "Average legroom (30 in)",
+      "Free Wi-Fi",
+      "In-seat USB outlet",
+      "Carbon emissions estimate: 195 kg"
+     ]
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 150,
+     "name": "Hamburg Airport",
+     "id": "HAM"
+    },
+    {
+     "duration": 70,
+     "name": "Copenhagen Airport",
+     "id": "CPH"
+    }
+   ],
+   "total_duration": 815,
+   "carbon_emissions": {
+    "this_flight": 1797000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 53
+   },
+   "price": 11134,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFaEJGU3pVNWZGTkxOalV3ZkZOTE5qRTNHZ3NJN2ZsREVBSWFBMVZUUkRnY2NPMzVRdz09IixbWyJEWEIiLCIyMDI2LTExLTI3IiwiSEFNIixudWxsLCJFSyIsIjU5Il0sWyJIQU0iLCIyMDI2LTExLTI3IiwiQ1BIIixudWxsLCJTSyIsIjY1MCJdLFsiQ1BIIiwiMjAyNi0xMS0yNyIsIkdWQSIsbnVsbCwiU0siLCI2MTciXV1d"
+  },
+  {
+   "flights": [
+    {
+     "departure_airport": {
+      "name": "Dubai International Airport",
+      "id": "DXB",
+      "time": "2026-11-27 07:25"
+     },
+     "arrival_airport": {
+      "name": "Adolfo Su\u00e1rez Madrid-Barajas Airport",
+      "id": "MAD",
+      "time": "2026-11-27 12:40"
+     },
+     "duration": 495,
+     "airplane": "Airbus A380",
+     "airline": "Emirates",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EK.png",
+     "travel_class": "Business Class",
+     "flight_number": "EK 141",
+     "extensions": [
+      "Lie flat seat",
+      "Free Wi-Fi",
+      "In-seat power & USB outlets",
+      "On-demand video",
+      "Carbon emissions estimate: 1599 kg"
+     ]
+    },
+    {
+     "departure_airport": {
+      "name": "Adolfo Su\u00e1rez Madrid-Barajas Airport",
+      "id": "MAD",
+      "time": "2026-11-27 15:25"
+     },
+     "arrival_airport": {
+      "name": "Geneva Airport",
+      "id": "GVA",
+      "time": "2026-11-27 17:25"
+     },
+     "duration": 120,
+     "airplane": "Boeing 737",
+     "airline": "Air Europa",
+     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UX.png",
+     "travel_class": "Business Class",
+     "flight_number": "UX 1665",
+     "legroom": "31 in",
+     "extensions": [
+      "Average legroom (31 in)",
+      "Carbon emissions estimate: 135 kg"
+     ],
+     "plane_and_crew_by": "Air Europa Express"
+    }
+   ],
+   "layovers": [
+    {
+     "duration": 165,
+     "name": "Adolfo Su\u00e1rez Madrid-Barajas Airport",
+     "id": "MAD"
+    }
+   ],
+   "total_duration": 780,
+   "carbon_emissions": {
+    "this_flight": 1734000,
+    "typical_for_this_route": 1173000,
+    "difference_percent": 48
+   },
+   "price": 12101,
+   "type": "One way",
+   "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+   "booking_token": "WyJDalJJT0RFd2IxZ3pWVzF1YzAxQlNrNVpYMUZDUnkwdExTMHRMUzEyZDNkc05TMXVNa0ZCUVVGQlIzSTBTbmc0VHpFNFFsVkJFZ3hGU3pFME1YeFZXREUyTmpVYUN3anY3VWtRQWhvRFZWTkVPQnh3NysxSiIsW1siRFhCIiwiMjAyNi0xMS0yNyIsIk1BRCIsbnVsbCwiRUsiLCIxNDEiXSxbIk1BRCIsIjIwMjYtMTEtMjciLCJHVkEiLG51bGwsIlVYIiwiMTY2NSJdXV0="
+  }
+ ],
+ "price_insights": {
+  "lowest_price": 1072,
+  "price_level": "low",
+  "typical_price_range": [
+   1300,
+   1500
+  ],
+  "price_history": [
+   [
+    1789329600,
+    1379
+   ],
+   [
+    1789416000,
+    1379
+   ],
+   [
+    1789502400,
+    1379
+   ],
+   [
+    1789588800,
+    1379
+   ],
+   [
+    1789675200,
+    1379
+   ],
+   [
+    1789761600,
+    1379
+   ],
+   [
+    1789848000,
+    1379
+   ],
+   [
+    1789934400,
+    1379
+   ],
+   [
+    1790020800,
+    1379
+   ],
+   [
+    1790107200,
+    1382
+   ],
+   [
+    1790193600,
+    1382
+   ],
+   [
+    1790280000,
+    1382
+   ],
+   [
+    1790366400,
+    1382
+   ],
+   [
+    1790452800,
+    1382
+   ],
+   [
+    1790539200,
+    1382
+   ],
+   [
+    1790625600,
+    1382
+   ],
+   [
+    1790712000,
+    1382
+   ],
+   [
+    1790798400,
+    1382
+   ],
+   [
+    1790884800,
+    1382
+   ],
+   [
+    1790971200,
+    1382
+   ],
+   [
+    1791057600,
+    1382
+   ],
+   [
+    1791144000,
+    1382
+   ],
+   [
+    1791230400,
+    1303
+   ],
+   [
+    1791316800,
+    1303
+   ],
+   [
+    1791403200,
+    1303
+   ],
+   [
+    1791489600,
+    1303
+   ],
+   [
+    1791576000,
+    1303
+   ],
+   [
+    1791662400,
+    1303
+   ],
+   [
+    1791748800,
+    1322
+   ],
+   [
+    1791835200,
+    1322
+   ],
+   [
+    1791921600,
+    1322
+   ],
+   [
+    1792008000,
+    1322
+   ],
+   [
+    1792094400,
+    1322
+   ],
+   [
+    1792180800,
+    1322
+   ],
+   [
+    1792267200,
+    1322
+   ],
+   [
+    1792353600,
+    1322
+   ],
+   [
+    1792440000,
+    1322
+   ],
+   [
+    1792526400,
+    1322
+   ],
+   [
+    1792612800,
+    1322
+   ],
+   [
+    1792699200,
+    1322
+   ],
+   [
+    1792785600,
+    1322
+   ],
+   [
+    1792872000,
+    1322
+   ],
+   [
+    1792958400,
+    1322
+   ],
+   [
+    1793044800,
+    1322
+   ],
+   [
+    1793131200,
+    1322
+   ],
+   [
+    1793217600,
+    1322
+   ],
+   [
+    1793304000,
+    1322
+   ],
+   [
+    1793390400,
+    1322
+   ],
+   [
+    1793476800,
+    1322
+   ],
+   [
+    1793563200,
+    1322
+   ],
+   [
+    1793649600,
+    1322
+   ],
+   [
+    1793736000,
+    1061
+   ],
+   [
+    1793822400,
+    1061
+   ],
+   [
+    1793908800,
+    1061
+   ],
+   [
+    1793995200,
+    1061
+   ],
+   [
+    1794081600,
+    1061
+   ],
+   [
+    1794168000,
+    1061
+   ],
+   [
+    1794254400,
+    1061
+   ],
+   [
+    1794340800,
+    1061
+   ],
+   [
+    1794427200,
+    1061
+   ],
+   [
+    1794513600,
+    1061
+   ],
+   [
+    1794600000,
+    1072
+   ]
+  ]
+ },
+ "airports": [
+  {
+   "departure": [
+    {
+     "airport": {
+      "id": "DXB",
+      "name": "Dubai International Airport"
+     },
+     "city": "Dubai",
+     "country": "United Arab Emirates",
+     "country_code": "AE",
+     "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRegWMQBRhDOeg2gvll8nGXsG1-OPqD2V0EvCN1Ni2Poe9hGY8CBps9mRaAyrAz8Jvsvl292aI62fq43A",
+     "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDaD8FERvoI4iorjkWbED9zAq7S3m9hD1t5vGNU5Jznr1Kl1em9SIs9c9VkujJF5_EDvC5mKyqcQ9B8PApW9tiwfzhK_pC2qvRBND2Plo"
+    }
+   ],
+   "arrival": [
+    {
+     "airport": {
+      "id": "GVA",
+      "name": "Geneva Airport"
+     },
+     "city": "Geneva",
+     "country": "Switzerland",
+     "country_code": "CH",
+     "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgx03CYHtPmXwLBBNkpK46NZNFpo0abz2FkXT5FhaXoGQRaSF8ye8xTvvwNh7caWVT8GZyH1FjvQ4idA",
+     "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmN8-AOBQ6QXGfk26E8voligyWqzvldc8Cx5n9RcEnIC8WE1p-i9s379ThASMlgVpXAiNHIH7owjnFAtV1HSgwqxHvCAijt8MBahDsWRs"
+    }
+   ]
+  }
+ ]
+}

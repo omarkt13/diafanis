@@ -77,6 +77,7 @@ export interface CashItinerary {
   via: string[]
   airlines: string[]
   best: boolean
+  other_cabin?: string[]
   segments: CashSegment[]
 }
 
@@ -124,6 +125,7 @@ export interface Offer {
   reach: Reach | null
   partner: boolean // award booked through a program of another airline
   belowTypical: boolean
+  otherCabin?: string[] // cash fare: flights in a different cabin, for example "AF 1642 Economy"
 }
 
 /** One set of flights from A to B, with every fare found for it. */

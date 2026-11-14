@@ -25,7 +25,7 @@ Three views:
 | Round-trip ticket prices in 4 cabins | 4 SerpApi searches |
 
 A one-way search uses 3 Seats.aero calls and 10 SerpApi searches. A round trip uses 6 and 16.
-Results are cached for 30 minutes.
+Results are cached for 30 minutes. Each cash search asks Google for its full list of fares (`show_hidden`), at the same cost.
 
 ## Run
 
@@ -76,6 +76,8 @@ Add your own cards there: `"ratio"` is the number of points for 1 mile.
 - Award taxes in dollars use fixed exchange rates (`USD_PER` in `backend/app/engine/awards.py`).
 - Cash fares and fare tricks are for the search date only. Other dates in the date strip show awards only.
 - Fare tricks run for economy and business only.
+- A premium or first fare can have a flight in a lower cabin. The row shows "Mixed cabin" with those flights.
+- A hidden-city fare shows only when Google lists a ticket that connects at your destination. This is rare when the destination is not a hub (GVA), and common when it is (DXB).
 - A round trip is priced as two directions. The table above the list compares one return ticket, two one-way tickets, and a mix of cash and miles.
 - A hidden-city or return-ticket fare breaks airline ticket rules. The page shows the risks on each one.
 - The tool does not book. It links to the program or to Google Flights.

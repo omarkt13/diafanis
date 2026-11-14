@@ -17,7 +17,10 @@ def seg(fn, airline, o, d, day, dep, arr, dur, plus=0):
 
     day2 = (date.fromisoformat(day) + timedelta(days=plus)).isoformat()
     return {"departure_airport": {"id": o, "time": f"{day} {dep}"}, "arrival_airport": {"id": d, "time": f"{day2} {arr}"},
-            "duration": dur, "airplane": "Airbus A350", "airline": airline, "travel_class": "Business", "flight_number": fn}
+            "duration": dur, "airplane": "Airbus A350", "airline": airline, "travel_class": "", "flight_number": fn}
+
+
+LABEL = {"1": "Economy", "2": "Premium Economy", "3": "Business Class", "4": "First Class"}
 
 
 def item(price, segs, total):
@@ -27,6 +30,17 @@ def item(price, segs, total):
 @app.get("/search.json")
 def search(departure_id: str, arrival_id: str, outbound_date: str, type: str = "2", travel_class: str = "1", return_date: str | None = None):
     k, day, o = SCALE.get(travel_class, 1.0), outbound_date, departure_id
+    return _label(_search(k, day, o, arrival_id, type), LABEL.get(travel_class, "Economy"))
+
+
+def _label(body, label):
+    for key in ("best_flights", "other_flights"):
+        for it in body.get(key) or []:
+            it["flights"] = [{**f, "travel_class": label} for f in it["flights"]]
+    return body
+
+
+def _search(k, day, o, arrival_id, type):
     dests = arrival_id.split(",")
     d = dests[0]
     hub = "IST" if "IST" not in (o, d) else "DOH"

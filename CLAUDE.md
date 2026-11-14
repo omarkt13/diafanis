@@ -23,7 +23,11 @@ See README.md for what a search does and how to run it.
 
 ## Open work
 
-- The SerpApi code (cash fares, fare tricks) was written from the documentation and tested with a stand-in
-  server only. In a session that has `SERPAPI_KEY`: run `python -m scripts.smoke` from `backend/`, fix
-  what differs, and add a test on the saved fixture. Check if Turkish Airlines fares show for DXB-GVA.
+- SerpApi was checked live on 2026-11-14 (DXB-GVA, 2026-11-27, return 2026-12-04). `tests/fixtures/serpapi_one_way.json`
+  is a real response. Facts from that check: `show_hidden=true` gives the full fare list (69 fares where the short list
+  has 9); some itineraries have no `price`; a round-trip price is the total with the lowest-cost return; a search with
+  several destinations in `arrival_id` gives the end airport of each itinerary in its last flight.
+- Not done: no test fixture for a round-trip or a multi-destination response. Add them if that code changes.
+- The hidden-city search finds nothing when the destination is not a hub. It still costs 1 search for each cabin.
+  A possible change: skip it when the destination is not in `HUBS`.
 - `app/data/transfers.json` needs the user's real cards and transfer partners.

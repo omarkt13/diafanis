@@ -7,7 +7,7 @@ from typing import Literal
 from pydantic import BaseModel
 
 from app.engine.geo import distance_km, is_airport
-from app.sources.serpapi_flights import CashItinerary, CashSearchResult, CashSegment, SerpApiFlightsClient
+from app.sources.serpapi_flights import CashItinerary, CashSearchResult, CashSegment, SerpApiFlightsClient, call_counter
 
 # A trick must save at least this share of the normal one-way fare to be shown.
 MIN_SAVING_SHARE = 0.05
@@ -147,7 +147,8 @@ async def search_tricks(
     serp: SerpApiFlightsClient, origin: str, destination: str, day: date, cabin: str, currency: str = "USD",
     include_return: bool = True,
 ) -> TrickResult:
-    calls_before = serp.calls_made
+    counter = [0]
+    call_counter.set(counter)  # tasks started below share this list
     beyond = pick_beyond(origin, destination)
     one_way = await serp.one_way(origin, destination, day, cabin, currency)
 
@@ -166,4 +167,4 @@ async def search_tricks(
     tricks = find_return_tricks(one_way, rts)
     if beyond and isinstance(results[-1], CashSearchResult):
         tricks += find_hidden_city(one_way, results[-1], destination)
-    return TrickResult(cabin=cabin, tricks=tricks, beyond=beyond, api_calls=serp.calls_made - calls_before, errors=errors)
+    return TrickResult(cabin=cabin, tricks=tricks, beyond=beyond, api_calls=counter[0], errors=errors)
